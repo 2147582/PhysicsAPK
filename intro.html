@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body class="uk-background-muted">
+    <div class="uk-section-primary uk-preserve-color">
+        <nav class="uk-navbar uk-navbar-sticky">
+            <div class="uk-navbar-left">
+                    <a class="uk-button uk-button-default uk-margin-small-right" uk-icon="icon: menu" uk-toggle="target: #offcanvas-overlay">
+                    </a>
+                    
+            </div>
+            <p>Physics</p>
+
+        </nav>
+    </div>
+
+    <div id="offcanvas-overlay" uk-offcanvas="mode: slide; overlay: true">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-animation">
+            <div class="uk-panel">
+                <ul class="uk-nav uk-nav-default">
+                    <h3><a class="uk-link-reset" href="index.html">Home</a></h3>
+                    <!-- First Heading -->
+                    <li class="uk-nav-header">Lessons</li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-parent">
+                        <a class="uk-disabled">Physics 1</a>
+                        <ul class="uk-nav-sub">
+                            <li class="uk-active"><a href="">Introduction</a></li>
+                            <li><a href="">Unit Vectors</a></li>
+                            <li><a href="">Torque</a></li>
+                            <li><a href="">Vector and Scalar Quantities</a></li>
+                            <li><a href="">Heat Quantities</a></li>
+                            <li><a href="">Linear Momentum and Collision</a></li>
+                            <li><a href="">Work</a></li>
+                            <li><a href="">Newton's Law of Motion</a></li>
+                            <li><a href="">Uniformly Accelerated Rectilinear Motion</a></li>
+                            <li><a href="">Projectile Motion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-parent">
+                        <a class="uk-disabled">Physics 2</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="">Electromagnetism</a></li>
+                            <li><a href="">Gauss' Law</a></li>
+                            <li><a href="">Simple Harmonic Motion</a></li>
+                            <li><a href="">Capacitors</a></li>
+                            <li><a href="">Mechanical Waves</a></li>
+                            <li><a href="">Acoustics</a></li>
+                            <li><a href="">Current, Resistance and Electromotive Force</a></li>
+                            <li><a href="">Direct Current Circuits</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--
+                    <ul class="uk-nav uk-nav-default">-->
+                <!-- Second Heading -->
+
+                <!--    <li class="uk-nav-header"></li>
+                        <li class="uk-nav-header">Quizes</li>
+                        <li class="uk-nav-divider"></li>
+                        <li class="uk-parent">
+                            <a href="#">Prelim</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                        </li>
+                        <li class="uk-parent">
+                            <a href="#">Midterm</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                        </li>
+                        <li class="uk-parent">
+                            <a href="#">Finals</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                        </li>
+                        </li>
+                    </ul> -->
+
+                <ul class="uk-nav uk-nav-default" uk-nav="multiple: true;">
+                    <!-- Third Heading -->
+                    <li class="uk-nav-header"></li>
+                    <li class="uk-nav-header">About</li>
+                    <li class="uk-nav-divider"></li>
+                    <li>
+                        <a href="#">This App</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div> <!-- End of Canvas-->
+
+    
+    <div class="uk-section">
+        <div class="uk-container uk-container-xsmall">
+            <h2> Introduction </h2>
+            <ul uk-accordion="multiple: true">
+                
+                <!-- Introduction -->
+                <li class="uk-open">
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Defining Physics</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list uk-list-bullet">
+                            <li>Comes from the Greek word "physis", meaning "of nature"</li>
+                            <li>Fundamental Science</li>
+                            <li>Foundation of other physical sciences</li>
+                            <li>Concerned with the fundamental principles of the Universe</li>
+                            <li>It deals with the study of matter, energy, forces and the interaction among them</li>
+                        </ul>
+
+                        <h4>Branches of Physics</h4>
+                        <ul class="uk-list">
+                            <li><b>1. Classical Mechanics</b> - Concerning the motion of objects that are large relative to atoms and move at speeds much slower than the speed of light</li>
+                            <li><b>2. Relativity</b> - A theory describing objects moving at any speed, even speeds approaching the speed of light</li>
+                            <li><b>3. Thermodynamics</b> - Dealing with heat, work, temperature, and the statistical behavior of systems with large numbers of particles</li>
+                            <li><b>4. Electromagnetism</b> - Concerning electricity, magnetism, and electromagnetic fields</li>
+                            <li><b>5. Optics</b> - The study of the behavior of light and its interaction with materials</li>
+                            <li><b>6. Quantum Mechanics</b> - A collection of theories connecting the behavior of matter at the submicroscopic level to macroscopic observations</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- Classical and Modern Physics -->
+                <li>
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Classical and Modern Physics</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <h5 class="uk-heading">Classical Physics</h5>
+                        <ul class="uk-list uk-list-bullet">
+                            <li>Developed before 1900</li>
+                            <li>Classical mechanics, thermodynamics, optics, and electromagnetism</li>
+                        </ul>
+                        <h5 class="uk-heading">Modern Physics</h5>
+                        <ul class="uk-list uk-list-bullet">
+                            <li>From about 1900 to the present</li>
+                            <li>Relativity and quantum mechanics</li>
+                        </ul>
+                        <h5 class="uk-heading">Objectives of Physics</h5>
+                        <ul class="uk-list uk-list-bullet">
+                            <li>To find the limited number of fundamental laws that governs natural phenomena</li>
+                            <li>To use these laws to develop theories that can predict the results of future experiments</li>
+                            <li>Express the laws in the language of mathematics (Mathematics provides the bridge between theory and experiment)</li>
+                        </ul>
+                    </div>
+                </li>
+                   
+                <!-- Measurements -->
+                <li>
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Measurements</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li>It is used to describe natural phenomena.</li>
+                            <li>Each measurement is associated with a physical quantity</li>
+                            <ul class="uk-list uk-list-bullet">
+                                <li><u>Physical Quantity</u> - Any number that is used to describe a physical phenomenon quantitatively (ex. weight, height, time, temperature, etc).</li>
+                                <li><u>Fundamental Quantities</u> - Physical quantities used to define length, mass, time, electric current, luminous intensity and amount of substance.</li>
+                                <li><u>Derived Quantities</u> - Combinations of two or more basic quantities.</li>
+                            </ul>
+                        </ul>
+                        <h4 class="uk-heading">Two Measurement System</h4>
+                        <ul class="uk-list">
+                            <li>1. International System of Units <i>(French "Le Systéme International d" Unite’s)</i></li>
+                            <ul class="uk-list uk-list-bullet">
+                                <li>Other known as Metric System.</li>
+                                <li>Was agreed upon by the “General Conference on Weight s and Measurements” in 1960.
+                                </li>
+                                <li>Has two subsystems/ variations, the mks (meter – kilograms – seconds) and the cgs (centimeter- grams – seconds).</li>
+                            </ul>
+                            <li>2. US Customary System or English System</li>
+                            <ul class="uk-list uk-list-bullet">
+                                <li>Only in US and few countries.</li>
+                            </ul>
+                        </ul>
+                        
+                        <ul class="uk-list">
+                            <!-- This is an anchor toggling the image modal 1 -->
+                            <a href="#fund-Quantity" uk-toggle>Fundamental Quantities and Units </a>
+                            <!-- First  modal -->
+                            <div id="fund-Quantity" uk-modal>
+                                <div class="uk-modal-dialog uk-modal-body">
+                                    <h2 class="uk-modal-title">Unit Table</h2>
+                                    <img data-src="img/fundQuantity.JPG" width="450" height="450" uk-img>
+                                    <p class="uk-text-center">
+                                        <button class="uk-button uk-button-default uk-modal-close"
+                                            type="button">Close</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </ul>
+                        
+                        <ul class="uk-list">
+                            <!-- This is an anchor toggling the image modal  2 -->
+                            <a href="#der-Quantity" uk-toggle>Derived Quantities </a>
+                            <!-- This is the modal -->
+                            <div id="der-Quantity" uk-modal>
+                                <div class="uk-modal-dialog uk-modal-body">
+                                    <h2 class="uk-modal-title">Unit Table</h2>
+                                    <img data-src="img/derQuantity.JPG" width="450" height="450" uk-img>
+                                    <p class="uk-text-center">
+                                        <button class="uk-button uk-button-default uk-modal-close"
+                                            type="button">Close</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </ul>
+
+                    </div>
+                </li>
+
+                <!-- Standards -->
+                <li>
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Standards</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <h5>A fixed magnitudes of a unit established to have a precise and reproducible definition of the unit</h5>
+                        <h5 class="uk-heading">Characteristics of Standards for measurements</h5>
+                        <ul class="uk-list uk-list-bullet">
+                            <li>Readily accessible</li>
+                            <li>Possess some property that can be measured reliably.</li>
+                            <li>Must yield the same results when used by anyone anywhere.</li>
+                            <li>Cannot change with time.</li>
+                        </ul>
+                        <ul class="uk-list">
+                            <li>1. Length</li>
+                                <ul class="uk-list-bullet">
+                                    <li>1 meter - The distance traveled by light in vacuum during a time of 1/299 792 458 second</li>
+                                </ul>
+                            <li>2. Mass</li>
+                                <ul class="uk-list-bullet">
+                                    <li>1 kilogram - The mass of a specific platinum–iridium alloy cylinder kept at the International Bureau of Weights and Measures at Sèvres, France</li>
+                                </ul>
+                            <li>3. Time</li>
+                                <ul class="uk-list-bullet">
+                                    <li>1 second - The time taken by 9,192,631,770 oscillations of the light (of a specified wavelength) emitted by a cesium-133 atom. </li>
+                                </ul>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- S.I. Prefixes -->
+                <li>
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>S.I. Prefixes</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list uk-list-bullet">
+                            <li>Prefixes correspond to powers of 10.</li>
+                            <li>Each prefix has a specific name.</li>
+                            <li>Each prefix has a specific abbreviation.</li>
+                            <li>The prefixes can be used with any basic units.</li>
+                            <li>They are multipliers of the basic unit.</li>
+                        </ul>
+                        <ul class="uk-list">
+                            <!-- This is an anchor toggling the image modal 3 -->
+                            <a href="#SI-Prefix" uk-toggle>SI Prefix Table </a>
+                            <!-- Third  modal -->
+                            <div id="SI-Prefix" uk-modal>
+                                <div class="uk-modal-dialog uk-modal-body">
+                                    <h2 class="uk-modal-title">SI Table</h2>
+                                    <img data-src="img/SIPrefix.JPG" width="450" height="450" uk-img>
+                                    <p class="uk-text-center">
+                                        <button class="uk-button uk-button-default uk-modal-close"
+                                            type="button">Close</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </ul>
+                        
+                        <h4 class="uk-heading">Conversion of Units and Dimensional Analysis </h4>
+                        <ul class="uk-list">
+                            <li>Dimension</li>
+                            <ul class="uk-list uk-list-bullet">
+                                <li>Refers to the physical nature of a quantity and the type of unit to specify it; treated like algebraic quantities.</li>
+                                <li>Only quantities of the same unit may be added or subtracted </li>
+                            </ul>
+                            <li>Dimensional Analysis</li>
+                            <ul class="uk-list uk-list-bullet">
+                                <li>Also known as "Factor Label or Unit Factor Method."</li>
+                                <li>Used to check whether an expression is in the correct form. The relationship is correct if both sides of the equation have the same dimension. </li>
+                                <li>It is also used for consistency of units</li>
+                            </ul>
+                            <li>Conversion</li>
+                            <ul class="uk-list uk-list-bullet">
+                                <li>Re-expressing one unit in terms of another unit.</li>
+                            </ul>
+                        </ul>
+
+                    </div>
+                </li>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
