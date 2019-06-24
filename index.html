@@ -1,30 +1,97 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css"/>
-	<link rel="stylesheet" type="text/css" href="css/jquery.mobile.external-png-1.4.5.min.css"/>
-	<link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons-1.4.5.min.css"/>
-	<link rel="stylesheet" type="text/css" href="css/jquery.mobile.inline-png-1.4.5.min.css"/>
-	<link rel="stylesheet" type="text/css" href="css/jquery.mobile.inline-svg-1.4.5.min.css"/>
-	<link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.5.min.css"/>
-	<link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.5.min.css"/>
-	<script type="text/javascript" href="css/jquery.mobile-1.4.5.min.js"></script>
-</head>
-<body data-gr-c-s-loaded="true" class="ui-mobile-viewport ui-overlay-a" id="ui-page-top">
-	<div data-role="header" class="ui-content" align="center">
-		<h1>Physics: Electromagnetism and Electricity</h1>
-		<hr/>
-	</div>
-	<div data-role="page" class="ui-content">
-		<p style=font-size:40px>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-	</div>
 
-	<div data-role="footer" data-position="fixed" data-tap-toggle="false" class="jqm-footer ui-footer ui-footer-fixed" role="content-info" align="center">
-		<p>In Collaboration of: </p>
-			<p>School of Engineering and Architecture</p> <span> &</span> 
-			<p>School of Accountancy, Management, Computing, and Information Studies</p>
-			<p>Saint Louis University, Baguio City</p>
-	</div>
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+    <div class="uk-section-primary uk-preserve-color">
+        <nav class="uk-navbar uk-navbar-sticky">
+            <div class="uk-navbar-left">
+                    <a class="uk-button uk-button-default uk-margin-small-right" uk-icon="icon: menu" uk-toggle="target: #offcanvas-overlay">
+                    </a>
+                    
+            </div>
+            <p>Physics</p>
+
+        </nav>
+    </div>
+
+    <!-- Main Off-canvas -->
+    <div id="offcanvas-overlay" uk-offcanvas="mode: slide; overlay: true">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-animation">
+            <div class="uk-panel">
+                <ul class="uk-nav-default uk-nav-parent-icon" uk-nav="multiple: true">
+                    <!-- First Heading -->
+                    <li class="uk-nav-header">Lessons</li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-parent">
+                        <a href="#">Prelim</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                    </li>
+                    <li class="uk-parent">
+                        <a href="#">Midterm</a>
+                            <ul class="uk-nav-sub">
+                            <li><a href="#">Sub item</a></li>
+                            <li><a href="#">Sub item</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent">
+                        <a href="#">Finals</a>
+                            <ul class="uk-nav-sub">
+                            <li><a href="#">Sub item</a></li>
+                            <li><a href="#">Sub item</a></li>
+                        </ul>
+                    </li>
+                    <!-- Second Heading -->
+                    <li class="uk-nav-header"></li>
+                    <li class="uk-nav-header">Quizes</li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-parent">
+                            <a href="#">Prelim</a>
+                                <ul class="uk-nav-sub">
+                                    <li><a href="#">Sub item</a></li>
+                                    <li><a href="#">Sub item</a></li>
+                                </ul>
+                    </li>
+                    <li class="uk-parent">
+                            <a href="#">Midterm</a>
+                                <ul class="uk-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                    </li>
+                    <li class="uk-parent">
+                            <a href="#">Finals</a>
+                                <ul class="uk-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                    </li>
+
+                    <!-- Third Heading -->
+                    <li class="uk-nav-header"></li>
+                    <li class="uk-nav-header">About</li>
+                    <li class="uk-nav-divider"></li>
+                    <li>
+                            <a href="#">This App</a>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div> <!-- End of Canvas-->
+
 </body>
+
 </html>
