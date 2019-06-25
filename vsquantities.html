@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body class="uk-background-muted">
+    <div class="uk-section-primary uk-preserve-color">
+        <nav class="uk-navbar uk-navbar-sticky">
+            <div class="uk-navbar-left">
+                <a class="uk-button uk-button-default uk-margin-small-right" uk-icon="icon: menu"
+                    uk-toggle="target: #offcanvas-overlay">
+                </a>
+
+            </div>
+            <p>Physics</p>
+
+        </nav>
+    </div>
+
+    <div id="offcanvas-overlay" uk-offcanvas="mode: slide; overlay: true">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-animation">
+            <div class="uk-panel">
+                <ul class="uk-nav uk-nav-default">
+                    <h3><a class="uk-link-reset" href="index.html">Home</a></h3>
+                    <!-- First Heading -->
+                    <li class="uk-nav-header">Lessons</li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-parent">
+                        <a class="uk-disabled">Physics 1</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="intro.html">Introduction</a></li>
+                            <li><a href="uvectors.html">Unit Vectors</a></li>
+                            <li><a href="torque.html">Torque</a></li>
+                            <li  class="uk-active"><a href="vsquantities.html">Vector and Scalar Quantities</a></li>
+                            <li><a href="">Heat Quantities</a></li>
+                            <li><a href="">Linear Momentum and Collision</a></li>
+                            <li><a href="">Work</a></li>
+                            <li><a href="">Newton's Law of Motion</a></li>
+                            <li><a href="">Uniformly Accelerated Rectilinear Motion</a></li>
+                            <li><a href="">Projectile Motion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-parent">
+                        <a class="uk-disabled">Physics 2</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="">Electromagnetism</a></li>
+                            <li><a href="">Gauss' Law</a></li>
+                            <li><a href="">Simple Harmonic Motion</a></li>
+                            <li><a href="">Capacitors</a></li>
+                            <li><a href="">Mechanical Waves</a></li>
+                            <li><a href="">Acoustics</a></li>
+                            <li><a href="">Current, Resistance and Electromotive Force</a></li>
+                            <li><a href="">Direct Current Circuits</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="uk-nav uk-nav-default" uk-nav="multiple: true;">
+                    <!-- Third Heading -->
+                    <li class="uk-nav-header"></li>
+                    <li class="uk-nav-header">About</li>
+                    <li class="uk-nav-divider"></li>
+                    <li>
+                        <a href="#">This App</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div> <!-- End of Canvas-->
+
+
+    <div class="uk-section">
+        <div class="uk-container uk-container-xsmall">
+            <h2> Scalar and Vector Quantities </h2>
+            <ul uk-accordion="multiple: true">
+
+                <!-- Scalar -->
+                <li class="uk-open">
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Scalar</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li>A <b>Scalar</b> is quantity that has <u>Magnitude</u>, but not a direction associated with it.</li>
+                            <li>Magnitude – A numerical value with units.</li>
+                            <li>Example:</li>
+                            <ul class="uk-list">
+                                <table class="uk-table uk-table-hover uk-table-divider">
+                                    <thead>
+                                        <tr>
+                                            <th>Scalar Quantities</th>
+                                            <th>Magnitude</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Speed</td>
+                                            <td>20 m/s</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Mass</td>
+                                            <td>1 kg</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Volume</td>
+                                            <td>10 m^3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Distance</td>
+                                            <td>1m</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </ul>
+                            <li>Scalar Addition follows ordinary arithmetic procedures.</li>
+                            <li>Example:
+                            <ul class="uk-list">
+                                <li>Mass: 10kg + 5kg = 15kg</li>
+                                <li>Length:  20m - 10m = 10m</li>
+                            </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- Vector -->
+                <li>
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Vector</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li>A <b>Vector</b> is quantity that has <u>both Magnitude and Direction</u>.</li>
+                            <li>Example:</li>
+                            <ul class="uk-list">
+                                <table class="uk-table uk-table-hover uk-table-divider">
+                                    <thead>
+                                        <tr>
+                                            <th>Scalar Quantities</th>
+                                            <th>Magnitude</th>
+                                            <th>Direction</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Speed</td>
+                                            <td>20 m/s</td>
+                                            <td>North</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mass</td>
+                                            <td>10 m/s</td>
+                                            <td>East</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Volume</td>
+                                            <td>5 N</td>
+                                            <td>West</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Distance</td>
+                                            <td>10 m</td>
+                                            <td>South</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </ul>
+                            <li>Vector Addition uses special methods which are not arithmetic. The particular method used depends on the orientation of the vectors and how many vectors are being considered.</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- Basics -->
+                <li>
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Basics on Vectors</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <h5 class="uk-header">A. Vector Notation</h5>
+                            <li>Vectors are typically represented by a Capital Bold Letter or drawing an Arrow (→) above the symbol. The arrow is used to convey direction and magnitude.</li>
+                            <li style="text-align: center"><img data-src="img/torqueVectorNotation.JPG" width="250" height="200" uk-img></li>
+                        </ul>
+                        <ul class="uk-list">
+                            <h5 class="uk-header">A. Graphical Representation</h5>
+                            <li>Vector quantity is represented graphically by an arrow.</li>
+                            <li style="text-align: center"><img data-src="img/torqueVectorGraphics.JPG" width="250" height="200" uk-img></li>
+                            <ul class="uk-list uk-list-bullet">
+                                <li>The length represents magnitude.</li>
+                                <li>The arrow faces the direction of motion.</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

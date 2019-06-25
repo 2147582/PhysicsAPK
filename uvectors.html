@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body class="uk-background-muted">
+    <div class="uk-section-primary uk-preserve-color">
+        <nav class="uk-navbar uk-navbar-sticky">
+            <div class="uk-navbar-left">
+                <a class="uk-button uk-button-default uk-margin-small-right" uk-icon="icon: menu"
+                    uk-toggle="target: #offcanvas-overlay">
+                </a>
+
+            </div>
+            <p>Physics</p>
+
+        </nav>
+    </div>
+
+    <div id="offcanvas-overlay" uk-offcanvas="mode: slide; overlay: true">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-animation">
+            <div class="uk-panel">
+                <ul class="uk-nav uk-nav-default">
+                    <h3><a class="uk-link-reset" href="index.html">Home</a></h3>
+                    <!-- First Heading -->
+                    <li class="uk-nav-header">Lessons</li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-parent">
+                        <a class="uk-disabled">Physics 1</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="intro.html">Introduction</a></li>
+                            <li class="uk-active"><a href="uvectors.html">Unit Vectors</a></li>
+                            <li><a href="torque.html">Torque</a></li>
+                            <li><a href="vsquantities.html">Vector and Scalar Quantities</a></li>
+                            <li><a href="">Heat Quantities</a></li>
+                            <li><a href="">Linear Momentum and Collision</a></li>
+                            <li><a href="">Work</a></li>
+                            <li><a href="">Newton's Law of Motion</a></li>
+                            <li><a href="">Uniformly Accelerated Rectilinear Motion</a></li>
+                            <li><a href="">Projectile Motion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-parent">
+                        <a class="uk-disabled">Physics 2</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="">Electromagnetism</a></li>
+                            <li><a href="">Gauss' Law</a></li>
+                            <li><a href="">Simple Harmonic Motion</a></li>
+                            <li><a href="">Capacitors</a></li>
+                            <li><a href="">Mechanical Waves</a></li>
+                            <li><a href="">Acoustics</a></li>
+                            <li><a href="">Current, Resistance and Electromotive Force</a></li>
+                            <li><a href="">Direct Current Circuits</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="uk-nav uk-nav-default" uk-nav="multiple: true;">
+                    <!-- Third Heading -->
+                    <li class="uk-nav-header"></li>
+                    <li class="uk-nav-header">About</li>
+                    <li class="uk-nav-divider"></li>
+                    <li>
+                        <a href="#">This App</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div> <!-- End of Canvas-->
+
+
+    <div class="uk-section">
+        <div class="uk-container uk-container-xsmall">
+            <h2> Unit Vectors </h2>
+            <ul uk-accordion="multiple: true">
+
+                <!-- Definition -->
+                <li class="uk-open">
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Definition</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li>A unit vector is a dimensionless vector having a magnitude of exactly 1. </li>
+                            <li>They are used solely as a convenience in describing a direction in space</li>
+                        </ul>
+                        <ul class="uk-list">
+                            <li>Let be</li>
+                            <ul class="uk-list">
+                                <li>î = unit vector pointing in the + x-axis</li>
+                                <li>Ĵ = unit vector pointing in the + y-axis</li>
+                                <li>k̂ = unit vector pointing in the + z-axis</li>
+                                <li>
+                                    <!-- This is an anchor toggling the image modal  2 -->
+                                    <a href="#vect-Diagram" uk-toggle>Vector representation </a>
+                                    <!-- This is the modal -->
+                                    <div id="vect-Diagram" uk-modal>
+                                        <div class="uk-modal-dialog uk-modal-body">
+                                            <h2 class="uk-modal-title">Vector</h2>
+                                            <img data-src="img/vectDiagram.JPG" width="450" height="450" uk-img>
+                                            <p class="uk-text-center">
+                                                <button class="uk-button uk-button-default uk-modal-close"
+                                                    type="button">Close</button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </ul>
+                        <ul class="uk-list">
+                            <li>We will always include a caret or "hat" (^) in the symbol for a unit vector to
+                                distinguish it from ordinary vectors whose magnitude may or may not be equal to 1.</li>
+                            <li>The unit vectors î, Ĵ, and k̂ form a set of mutually perpendicular vectors in a
+                                right-handed coordinate system, as shown in figure above. The magnitude of each unit
+                                vector equals 1; that is...</li>
+                            <li>|î| = |Ĵ| = |̂k| = 1</li>
+                        </ul>
+                        <ul class="uk-list">
+                            <li>If vectors <b>A</b> & <b>B</b> are in terms of its components:</li>
+                            <li><img data-src="img/vectComponents.JPG" width="250" height="200" uk-img></li>
+                            <li><i>Addition:</i></li>
+                            <li><img data-src="img/vectAddition.JPG" width="300" height="250" uk-img></li>
+                            <li><i>Subtraction:</i></li>
+                            <li><img data-src="img/vectSubtraction.JPG" width="300" height="250" uk-img></li>
+                        </ul>
+
+                    </div>
+                </li>
+
+                <!-- Product Vectors -->
+                <li>
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Product Vectors</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <h4 class="uk-heading">Scalar x Vector = Vector</h4>
+                        <ul class="uk-list">
+                            <li>Example:</li><br>
+                            <ul class="uk-list">
+                                <li>Given: </li>
+                                <li>→ A = Axî + AyĴ + Azk̂</li>
+                                <li>Scalar Quantity: n</li>
+                                <li> nA = n(Axî + AyĴ + Azk̂)</li>
+                                <li> nA = nAxî + nAyĴ + nAzk̂</li>
+                            </ul>
+                        </ul>
+                        <br>
+                        <ul class="uk-list">
+                            <h5 class="uk-heading">A.) Dot product (Scalar product)</h5>
+                            <li>Results to Scalar Quantity</li>
+                            <li><img data-src="img/vectProduct.JPG" width="300" height="250" uk-img></li>
+                            <li><img data-src="img/vectProductA.JPG" width="300" height="250" uk-img></li>
+                            <li> <img data-src="img/vectProductB.JPG" width="300" height="250" uk-img></li>
+                            <li>If θ = 90, A•B = 0, since cos(90) = 0</li>
+                            <li>If θ = 0, A•B = |A||B|, since cos(0) = 1</li>
+                            <li><i>*Dot product of 2 perpendicular vectors is always 0</i></li><br>
+                            <li>The Scalar Product is <i>commutative</i>; <b>A•B</b> = <b>B•A</b></li><br>
+                            <li>Using the unit vector representation:</li>
+                            <li>A•B = (Axî + AyĴ + Azk̂) • ( Bxî + ByĴ + Bzk̂)</li>
+                            <li>= AxîBxî + AxîByĵ + AxîBzk̂ + AyĵBxî + AyĵByĵ + AyĵBzk̂ + Azk̂Bxî + Azk̂Byĵ
+                                + Azk̂Bzk̂</li>
+                            <ul class="uk-list">
+                                <li><i>*Dot product of 2 perpendicular unit vectors is 0.</i></li>
+                                <li><i>*Dot product of 2 parallel unit vectors is 1.</i></li>
+                            </ul>
+                            <li>= AxBx + AyBy + AzBz</li>
+                            <li><img data-src="img/vectProductAB.JPG" width="250" height="200" uk-img></li>
+                        </ul><br>
+                        <ul class="uk-list">
+                            <h5 class="uk-heading">B.) Cross Product (Vector Product)</h5>
+                            <li>vector quantity with a direction perpendicular to the plane of the vector and a
+                                magnitude given by</li>
+                            <li><img data-src="img/vectCrossProduct.JPG" width="250" height="200" uk-img></li>
+                            <!-- This is an anchor toggling the image modal  2 -->
+                            <a href="#vect-Product" uk-toggle>Vector Product </a>
+                            <!-- This is the modal -->
+                            <div id="vect-Product" uk-modal>
+                                <div class="uk-modal-dialog uk-modal-body">
+                                    <h2 class="uk-modal-title">Vector Product</h2>
+                                    <img data-src="img/vectCrossDiagram.JPG" width="300" height="250" uk-img>
+                                    <p class="uk-text-center">
+                                        <button class="uk-button uk-button-default uk-modal-close"
+                                            type="button">Close</button>
+                                    </p>
+                                </div>
+                            </div>
+                            <li>If <b>A</b> & <b>B</b> are parallel, θ = 0 then AxB = |A||B|sin(0) = 0.</li>
+                            <li>There are always two directions perpendicular to a given plane. Use right hand rule.
+                            </li><br>
+                            <li>Using unit vector representation:</li><br>
+                            <li>The Scalar Product is <i>commutative</i>; <b>A•B</b> = <b>B•A</b></li><br>
+                            <li>Using the unit vector representation:</li>
+                            <ul class="uk-list">
+                                <li>AxB = (Axî + AyĴ + Azk̂) x ( Bxî + ByĴ + Bzk̂)</li>
+                                <li> = AxîBxî + AxîByĵ + AxîBzk̂ + AyĵBxî + AyĵByĵ + AyĵBzk̂ + Azk̂Bxî +
+                                    Azk̂Byĵ + Azk̂Bzk̂</li>
+                            </ul>
+                            <li>Where:</li>
+                            <ul class="uk-list">
+                                <table class="uk-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>ixi = 0</td>
+                                            <td>ixj = k</td>
+                                            <td>kxj = -i</td>
+                                        </tr>
+                                        <tr>
+                                            <td>jxj = 0</td>
+                                            <td>jxi = -k</td>
+                                            <td>ixk = -j</td>
+                                        </tr>
+                                        <tr>
+                                            <td>kxk = 0</td>
+                                            <td>jxk = i</td>
+                                            <td>kxi = j</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- This is an anchor toggling the image modal  2 -->
+                                <li style="text-align: center"><a href="#cross-Diag" uk-toggle>Visuals </a></li>
+                                <!-- This is the modal -->
+                                <div id="cross-Diag" uk-modal>
+                                    <div class="uk-modal-dialog uk-modal-body">
+                                        <h2 class="uk-modal-title">Vector Product</h2>
+                                        <img data-src="img/vectCrossCircle.JPG" width="300" height="250" uk-img>
+                                        <img data-src="img/vectCrossForm.JPG" width="400" height="200" uk-img>
+                                        <p class="uk-text-center">
+                                            <button class="uk-button uk-button-default uk-modal-close"
+                                                type="button">Close</button>
+                                        </p>
+                                    </div>
+                                </div>
+                                <li></li>
+                                <br>
+
+                            </ul>
+
+                        </ul>
+                    </div>
+                </li>
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
