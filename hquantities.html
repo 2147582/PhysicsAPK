@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body class="uk-background-muted">
+    <div class="uk-section-primary uk-preserve-color">
+        <nav class="uk-navbar uk-navbar-sticky">
+            <div class="uk-navbar-left">
+                <a class="uk-button uk-button-default uk-margin-small-right" uk-icon="icon: menu"
+                    uk-toggle="target: #offcanvas-overlay">
+                </a>
+
+            </div>
+            <p>Physics</p>
+
+        </nav>
+    </div>
+
+    <div id="offcanvas-overlay" uk-offcanvas="mode: slide; overlay: true">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-animation">
+            <div class="uk-panel">
+                <ul class="uk-nav uk-nav-default">
+                    <h3><a class="uk-link-reset" href="index.html">Home</a></h3>
+                    <!-- First Heading -->
+                    <li class="uk-nav-header">Lessons</li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-parent">
+                        <a class="uk-disabled">Physics 1</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="intro.html">Introduction</a></li>
+                            <li><a href="uvectors.html">Unit Vectors</a></li>
+                            <li><a href="torque.html">Torque</a></li>
+                            <li><a href="vsquantities.html">Vector and Scalar Quantities</a></li>
+                            <li class="uk-active"><a href="hquantities.html">Heat Quantities</a></li>
+                            <li><a href="lmomenandcol.html">Linear Momentum and Collision</a></li>
+                            <li><a href="work.html">Work</a></li>
+                            <li><a href="">Newton's Law of Motion</a></li>
+                            <li><a href="">Uniformly Accelerated Rectilinear Motion</a></li>
+                            <li><a href="">Projectile Motion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-parent">
+                        <a class="uk-disabled">Physics 2</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="">Electromagnetism</a></li>
+                            <li><a href="">Gauss' Law</a></li>
+                            <li><a href="">Simple Harmonic Motion</a></li>
+                            <li><a href="">Capacitors</a></li>
+                            <li><a href="">Mechanical Waves</a></li>
+                            <li><a href="">Acoustics</a></li>
+                            <li><a href="">Current, Resistance and Electromotive Force</a></li>
+                            <li><a href="">Direct Current Circuits</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="uk-nav uk-nav-default" uk-nav="multiple: true;">
+                    <!-- Third Heading -->
+                    <li class="uk-nav-header"></li>
+                    <li class="uk-nav-header">About</li>
+                    <li class="uk-nav-divider"></li>
+                    <li>
+                        <a href="#">This App</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div> <!-- End of Canvas-->
+
+
+    <div class="uk-section">
+        <div class="uk-container uk-container-xsmall">
+            <h2> Heat Quantities </h2>
+            <ul uk-accordion="multiple: true">
+
+                <!-- Scalar -->
+                <li class="uk-open">
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Quantities</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li><b>Temperature</b> is quantity that has <u>Magnitude</u>, but not a direction associated with it.</li><br>
+                            
+                            <li><b>Heat</b> is thermal energy that flows between two objects because of their temperature difference.</li>
+                            <ul class="uk-list">
+                                <li>Its SI unit is the joule. Other units used for heat are the calorie (1 cal = 4.1858 J) and the British thermal unit (1 Btu = 1054 J). The <i>"Calorie"</i> used by nutritionists is called the "large calorie" and is actually a kilocalorie <b>(1Cal = 1kcal = 10^3cal)</b></li>
+                            </ul><br>
+                            
+                            <li><b>Thermal Energy</b> is the random kinetic energy of the particles (usually electrons, ions, atoms, and molecules) composing a system.</li><br>
+                            
+                            <li>The <b>Specific Heat</b> (or Specific Heat Capacity, <b>c</b>) of a substance is the quantity of heat required to change the temperature of unit mass of the substance by one degree.</li>
+                            <ul class="uk-list">
+                                <li style="text-align: center"><img data-src="img/hQuantitiesSpec.JPG" width="150" height="100" uk-img></li>
+                                <li>In the SI, c has the unit J/kg-K, which is equivalent to J/kg °C. Also widely used is the unit cal/g. °C, where 1cal/g °C = 4184 J/kg °C.</li>
+                                <li>For: </li>
+                                <ul class="uk-list uk-list-bullet">
+                                    <li>Water: c = 4185.8 J/kg.°C = 1 cal/g °C.</li>
+                                    <li>Ice, c = 0.5cal/g.°C.</li>
+                                    <li>Steam, c = 1.996 kJ/kg.°C = 0.4769 cal/g.°C.</li>
+                                </ul>
+                            </ul><br>
+                            
+                            <li>The <b>Heat Gained</b> (or lost) by a body (whose phase does not change) as it undergoes a temperature change ΔT, is given by:</li>
+                            <ul class="uk-list">
+                                <li style="text-align: center"><img data-src="img/hQuantitiesHeatGained.JPG" width="200" height="150" uk-img></li>
+                            </ul><br>
+                            
+                            <li>The <b>Heat of Fusion (Lf)</b> is the quantity of heat required to melt a unit mass of the solid at constant temperature. It is also equal to the quantity of heat given off by a unit mass of the molten solid as it crystallizes at this same temperature. The heat of fusion of water at 0°C is about 335 kJ/kg or 80cal/g.</li>
+                            <ul class="uk-list">
+                                <li style="text-align: center"><img data-src="img/hQuantitiesHeatFusion.JPG" width="150" height="150" uk-img></li>
+                            </ul><br>
+                            
+                            <li>The <b>Heat of Vaporization (Lv)</b> of a liquid is the quantity of heat required to vaporize a unit mass of the liquid at constant temperature. For water at 100°C, Lv is about 2.26 MJ/kg or 540cal/g.</li>
+                            <ul class="uk-list">
+                                <li style="text-align: center"><img data-src="img/hQuantitiesHeatVaporization.JPG" width="150" height="150" uk-img></li>
+                            </ul><br>
+                            
+                            <li><b>Calorimetry Problems</b> involve the sharing of thermal energy among initially hot objects and cold objects. Since energy must be conserved, one can write the following equation:</li>
+                            <ul class="uk-list">
+                                <li>Sum of heat changes for all objects = 0</li>
+                                <li style="text-align: center"><img data-src="img/hQuantitiesCalorimetry.JPG" width="250" height="150" uk-img></li>
+                            </ul><br>
+
+                        </ul>
+                    </div>
+                </li>
+
+                
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

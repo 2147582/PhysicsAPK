@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body class="uk-background-muted">
+    <div class="uk-section-primary uk-preserve-color">
+        <nav class="uk-navbar uk-navbar-sticky">
+            <div class="uk-navbar-left">
+                <a class="uk-button uk-button-default uk-margin-small-right" uk-icon="icon: menu"
+                    uk-toggle="target: #offcanvas-overlay">
+                </a>
+
+            </div>
+            <p>Physics</p>
+
+        </nav>
+    </div>
+
+    <div id="offcanvas-overlay" uk-offcanvas="mode: slide; overlay: true">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-animation">
+            <div class="uk-panel">
+                <ul class="uk-nav uk-nav-default">
+                    <h3><a class="uk-link-reset" href="index.html">Home</a></h3>
+                    <!-- First Heading -->
+                    <li class="uk-nav-header">Lessons</li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-parent">
+                        <a class="uk-disabled">Physics 1</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="intro.html">Introduction</a></li>
+                            <li><a href="uvectors.html">Unit Vectors</a></li>
+                            <li><a href="torque.html">Torque</a></li>
+                            <li><a href="vsquantities.html">Vector and Scalar Quantities</a></li>
+                            <li><a href="hquantities.html">Heat Quantities</a></li>
+                            <li><a href="lmomenandcol.html">Linear Momentum and Collision</a></li>
+                            <li class="uk-active"><a href="work.html">Work, Power, and Energy</a></li>
+                            <li><a href="">Newton's Law of Motion</a></li>
+                            <li><a href="">Uniformly Accelerated Rectilinear Motion</a></li>
+                            <li><a href="">Projectile Motion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-parent">
+                        <a class="uk-disabled">Physics 2</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="">Electromagnetism</a></li>
+                            <li><a href="">Gauss' Law</a></li>
+                            <li><a href="">Simple Harmonic Motion</a></li>
+                            <li><a href="">Capacitors</a></li>
+                            <li><a href="">Mechanical Waves</a></li>
+                            <li><a href="">Acoustics</a></li>
+                            <li><a href="">Current, Resistance and Electromotive Force</a></li>
+                            <li><a href="">Direct Current Circuits</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="uk-nav uk-nav-default" uk-nav="multiple: true;">
+                    <!-- Third Heading -->
+                    <li class="uk-nav-header"></li>
+                    <li class="uk-nav-header">About</li>
+                    <li class="uk-nav-divider"></li>
+                    <li>
+                        <a href="#">This App</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div> <!-- End of Canvas-->
+
+
+    <div class="uk-section">
+        <div class="uk-container uk-container-xsmall">
+            <h2> Work, Power, and Energy </h2>
+            <ul uk-accordion="multiple: true">
+
+                <!-- Work -->
+                <li class="uk-open">
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Work</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li>Work is a measure of the amount of change (in a general sense) that a force produces when it acts on a body. The change may be in the velocity of the body, in its position, or in its size or shape.</li>
+                            <li>By definition, the work done by a force acting on a body is equal to the product of the force and the distance through which the force acts, provided <b>that F and s are in the same direction.</b> Thus</li>
+                            <ul class="uk-list">
+                                <li><b>W</b> = Fs</li>
+                                <li><b>Work</b> = Force x distance</li>
+                            </ul>
+                            <li>Work is a scalar quantity; no direction is associated with it. If F and s are not parallel but <b>F</b> is at the angle θ with respect to <b>s</b>, then</li>
+                            <ul class="uk-list">
+                                <li><b>W</b> = Fscosθ</li>
+                            </ul>
+                            <li>Since cos0°= 1, this formula becomes W = Fs when F is parallel to s.</li>
+                            <li>When F is perpendicular to s, θ = 90° and cos 90° = 0. No work is done in this case</li>
+                            <li>The unit of work is the product of a force unit and a length unit. In SI units, the unit of work is the joule (J).</li>
+                            <ul class="uk-list">
+                                <li>1 joule (J) = 1 Newton-meter = 0.738 ft•lb</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- Power -->
+                <li>
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Power</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li>Power is the rate at which work is done by a force. </li>
+                            <li>Thus.</li>
+                            <ul class="uk-list">
+                                <li style="text-align: center"><img data-src="img/wpePower.JPG" width="250" height="100" uk-img></li>
+                            </ul>
+                            <li>The more power something has, the more work it can perform in a given time.</li>
+                            <li>Two special units of power are in wide use, the watt and the horsepower, where</li>
+                            <ul class="uk-list">
+                                <li>1 watt (W) = 1 J/s = 1.34 x 10-3hp</li>
+                                <li>1 horsepower (hp) = 550 ft.lb/s = 746 W</li>
+                            </ul>
+                            <li>When a constant force <i>F</i> does work on a body that is moving at the constant velocity <i>v</i>, if <i>F</i> is parallel to <i>v</i>, the power involved is</li>
+                            <ul class="uk-list">
+                                <li style="text-align: center"><img data-src="img/wpePower2.JPG" width="250" height="100" uk-img></li>
+                            </ul>
+                            <li>because s/t = v; that is </li>
+                            <ul class="uk-list">
+                                <li>P = Fv</li>
+                                <li>Power = force x velocity</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- Energy -->
+                <li>
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Energy</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li>Energy is that property something has that enables it to do work. It is given to an object when a force does work on the object. The amount of energy transferred to the object equals the work done. The more energy something has, the more work it can perform. Two general categories of energy are kinetic energy and potential energy.</li>
+                            <li><i>The units of energy are the same as those of work, namely the joule and the foot-pound.</i></li><br>
+
+                            <li><b>Kinetic Energy (K)</b></li>
+                            <li>The energy a body has by virtue of its motion is called kinetic energy.</li>
+                            <li>If the body’s mass is m and its velocity is v, its kinetic energy is</li>
+                            <ul class="uk-list">
+                                <li>Kinetic energy = K = ½mv^2 </li>
+                                <li style="text-align: center"><img data-src="img/wpeEnergy.JPG" width="350" height="150" uk-img></li>
+                            </ul><br>
+
+                            <li><b>Potential Energy (U)</b></li><br>
+                            <li>The energy a body has by virtue of its position is called potential energy.</li>
+                            <li>The gravitational potential energy of a body of mass m at a height h above a given reference level is</li>
+                            <ul class="uk-list">
+                                <li>Gravitational potential energy = U = mgh</li>
+                                <li>Work done by gravity = -ΔU</li>
+                                <li><i>Work done by external force = ΔU</i></li>
+                            </ul>
+                            <li>where <i>g</i> is the acceleration due to gravity.</li><br>
+
+                            <li><b>Mechanical Energy (U)</b> </li>
+                            <li>The mechanical energy of an object is the sum of its kinetic energy and potential energy.</li>
+                            <ul class="uk-list">
+                                <li style="text-align: center"><b>E = K + U</b></li>
+                            </ul><br>
+
+                            <li><b>Conservation of Energy</b> </li>
+                            <li>According to the law of conservation of energy, energy cannot be created or destroyed, although it can be transformed from one kind to another.</li>
+                            <li>The total amount of energy in the universe is constant. A falling stone provides a simple example: More and more of its initial potential energy turns to kinetic energy as its velocity increases, until finally all its kinetic energy has become potential energy when it strikes the ground. The kinetic energy of the stone is then transferred to the ground as work by the impact. </li>
+                            <li>In general...</li>
+                            <ul class="uk-list">
+                                <li>Work done (by nonconservative forces) on an object = change in object’s KE + change in object’s PE</li>
+                                <li style="text-align: center"><img data-src="img/wpeEnergy3.JPG" width="250" height="100" uk-img></li>
+                            </ul>
+
+                            <li>If there’s <u>No nonconservative Force</u>, then:</li>
+                            <ul class="uk-list">
+                                    <li>0 = ΔK + ΔU </li>
+                                    <li><i>(conservative forces only)</i></li><br>
+                                    <li>ΔK = -ΔU</li>
+                                    <li><i>(Kinetic Energy gained = Potential Energy lost)</i></li><br>
+                                    <li>-ΔK = ΔU </li>
+                                    <li><i>(Kinetic Energy lost = Potential Energy gained)</i></li>
+                                    <li style="text-align: center"><img data-src="img/wpeEnergy4.JPG" width="250" height="100" uk-img></li>
+                                </ul>
+                        </ul>
+                    </div>
+                </li>
+                </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
