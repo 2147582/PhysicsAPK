@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <script src="js/uikit.js"></script>
     <script src="js/uikit-icons.min.js"></script>
 </head>
@@ -21,7 +22,7 @@
             </div>
             <p>Physics</p>
 
-        </nav>  
+        </nav>
     </div>
 
     <div id="offcanvas-overlay" uk-offcanvas="mode: slide; overlay: true">
@@ -81,97 +82,70 @@
 
     <div class="uk-section">
         <div class="uk-container uk-container-xsmall">
-            <h2> Scalar and Vector Quantities </h2>
+            <h2> Electromagnetism </h2>
+            
+            <p>
+                Many applications of electricity are based on the fact that electric current passing thru a conductor produces a magnetic field around the conductor or vice versa, i.e. when a conductor moves thru a magnetic field, an electromotive force (emf) is generated and hence current could flow if there is a complete loop.
+                This is called electromagnetism. The operation of such devices or machines like the  <br> electric motor, generator, the transformer, the inductor coils, etc. are all based on this phenomenon.
+            </p>
             <ul uk-accordion="multiple: true">
 
-                <!-- Scalar -->
+                <!-- Electromagnetism: The Magnetic Field -->
                 <li class="uk-open">
                     <a class="uk-accordion-title" href="#">
-                        <h4 class="uk-heading-line"><span>Scalar</span></h4>
+                        <h4 class="uk-heading-line"><span> The Magnetic Field</span></h4>
                     </a>
                     <div class="uk-accordion-content">
                         <ul class="uk-list">
-                            <li>A <b>Scalar</b> is quantity that has <u>Magnitude</u>, but not a direction associated with it.</li>
-                            <li>Magnitude – A numerical value with units.</li>
+                            <li>It is a region in space wherein a force acts on a charge moving through it.</li>
                             <li>Example:</li>
+                            <ul>
+                                <li>The space around a magnet</li>
+                                <li>The space around a current-carrying conductor</li>
+                            </ul>
+                            <li>One characteristic of a magnetic field is its direction which is usually indicated by a set of lines drawn in the magnetic field called magnetic field lines (also called magnetic lines of force or lines of induction).</li>
                             <ul class="uk-list">
                                 <table class="uk-table uk-table-hover uk-table-divider">
-                                    <thead>
-                                        <tr>
-                                            <th>Scalar Quantities</th>
-                                            <th>Magnitude</th>
-                                        </tr>
-                                    </thead>
                                     <tbody>
+                                        <br>
                                         <tr>
-                                            <td>Speed</td>
-                                            <td>20 m/s</td>
-                                            
+                                            <img src="img/MagFieldLines.PNG" style="height: 200px; width 200px;"/>
                                         </tr>
                                         <tr>
-                                            <td>Mass</td>
-                                            <td>1 kg</td>
+                                            <img src="img/DownFieldLines.PNG" style="height: 200px; width 200px;"/>
                                         </tr>
                                         <tr>
-                                            <td>Volume</td>
-                                            <td>10 m^3</td>
+                                            <img src="img/Xfield.PNG" style="height: 200px; width 200px;"/>
                                         </tr>
                                         <tr>
-                                            <td>Distance</td>
-                                            <td>1m</td>
+                                            <img src="img/DotField.PNG" style="height: 200px; width 200px;"/>
                                         </tr>
                                     </tbody>
                                 </table>
                             </ul>
-                            <li>Scalar Addition follows ordinary arithmetic procedures.</li>
-                            <li>Example:
-                            <ul class="uk-list">
-                                <li>Mass: 10kg + 5kg = 15kg</li>
-                                <li>Length:  20m - 10m = 10m</li>
-                            </ul>
-                            </li>
+                            
+                            <li>Note: When the lines are curved, the magnetic field is non-uniform and the direction at any point is taken by the tangent to a line passing through that point.</li>
+                            <li style="text-align: center"><img src="img/CurvedLine.PNG" width="350" height="300"/></li>
                         </ul>
                     </div>
                 </li>
 
-                <!-- Vector -->
+                <!-- Magnetic Flux -->
                 <li>
                     <a class="uk-accordion-title" href="#">
-                        <h4 class="uk-heading-line"><span>Vector</span></h4>
+                        <h4 class="uk-heading-line"><span> Magnetic Flux (∅)</span></h4>
                     </a>
                     <div class="uk-accordion-content">
                         <ul class="uk-list">
-                            <li>A <b>Vector</b> is quantity that has <u>both Magnitude and Direction</u>.</li>
-                            <li>Example:</li>
+                            <li>A set of magnetic field lines or a group of lines taken or computed as one</li>
                             <ul class="uk-list">
                                 <table class="uk-table uk-table-hover uk-table-divider">
-                                    <thead>
-                                        <tr>
-                                            <th>Scalar Quantities</th>
-                                            <th>Magnitude</th>
-                                            <th>Direction</th>
-                                        </tr>
-                                    </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Speed</td>
-                                            <td>20 m/s</td>
-                                            <td>North</td>
+                                            <img src="img/Flux.PNG" style="height: 200px; width 200px;"/>
                                         </tr>
                                         <tr>
-                                            <td>Mass</td>
-                                            <td>10 m/s</td>
-                                            <td>East</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Volume</td>
-                                            <td>5 N</td>
-                                            <td>West</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Distance</td>
-                                            <td>10 m</td>
-                                            <td>South</td>
+                                            <img src="img/FluxForm.PNG" style="height: 200px; width 200px;"/>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -181,25 +155,49 @@
                     </div>
                 </li>
 
-                <!-- Basics -->
+                <!-- Magnetic Flux Density -->
                 <li>
                     <a class="uk-accordion-title" href="#">
-                        <h4 class="uk-heading-line"><span>Basics on Vectors</span></h4>
+                        <h4 class="uk-heading-line"><span> Magnetic Flux Density (β) at a point</span></h4>
                     </a>
                     <div class="uk-accordion-content">
                         <ul class="uk-list">
-                            <h5 class="uk-header">A. Vector Notation</h5>
-                            <li>Vectors are typically represented by a Capital Bold Letter or drawing an Arrow (→) above the symbol. The arrow is used to convey direction and magnitude.</li>
-                            <li style="text-align: center"><img data-src="img/torqueVectorNotation.JPG" width="250" height="200" uk-img></li>
-                        </ul>
-                        <ul class="uk-list">
-                            <h5 class="uk-header">A. Graphical Representation</h5>
-                            <li>Vector quantity is represented graphically by an arrow.</li>
-                            <li style="text-align: center"><img data-src="img/torqueVectorGraphics.JPG" width="250" height="200" uk-img></li>
-                            <ul class="uk-list uk-list-bullet">
-                                <li>The length represents magnitude.</li>
-                                <li>The arrow faces the direction of motion.</li>
+                            <li>Magnetic flux passing per unit area of a surface placed at the point perpendicular to the magnetic field.</li>
+                            <table class="uk-table uk-table-hover uk-table-divider">
+                                <tbody>
+                                    <tr>
+                                        <img src="img/FluxPassing.PNG" style="height: 200px; width 200px;"/>
+                                    </tr>
+                                    <tr>
+                                        <img src="img/FluxPassingForm.PNG" style="height: 200px; width 200px;"/>
+                                    </tr>
+                                    <tr>
+                                        <img src="img/FluxPassingForm2.PNG" style="height: 200px; width: 400px;"/>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h5>Note:</h5>
+                            <ul>
+                                <li><p>1. If the surface area A is PERPENDICULAR to β then,</p></li>
+                                <li><p>2. If the surface area A is NOT PERPENDICULAR to β then,</p></li>
                             </ul>
+                            <li>Magnetic flux density is a vector quantity and its direction is the same as the direction of the magnetic field at a point.</li>
+                            <li style="text-align: center"><img src="img/FluxDensity.PNG" style=" width: 250px height: 200px;"/></li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <!-- Sample Problems -->
+                <li>
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span> Sample Problems</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li>1.	The figure below is a perspective view of a flat surface with area 3cm2 in a uniform magnetic field. The magnetic flux through this surface is +0.9 mWb. Find the magnitude of the magnetic field. </li>
+                            <li style="text-align: center"><img src="img/FluxSampleProb1.PNG" style=" width: 250px height: 200px;"/></li>
+                            <li>2.	Determine the flux that passes through the area as shown on the figure below.</li>
+                            <li style="text-align: center"><img src="img/FluxSampleProb2.PNG" style=" width: 250px height: 200px;"/></li>
                         </ul>
                     </div>
                 </li>

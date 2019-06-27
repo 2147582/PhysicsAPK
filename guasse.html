@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body class="uk-background-muted">
+    <div class="uk-section-primary uk-preserve-color">
+        <nav class="uk-navbar uk-navbar-sticky">
+            <div class="uk-navbar-left">
+                <a class="uk-button uk-button-default uk-margin-small-right" uk-icon="icon: menu"
+                    uk-toggle="target: #offcanvas-overlay">
+                </a>
+
+            </div>
+            <p>Physics</p>
+
+        </nav>
+    </div>
+
+    <div id="offcanvas-overlay" uk-offcanvas="mode: slide; overlay: true">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-animation">
+            <div class="uk-panel">
+                <ul class="uk-nav uk-nav-default">
+                    <h3><a class="uk-link-reset" href="index.html">Home</a></h3>
+                    <!-- First Heading -->
+                    <li class="uk-nav-header">Lessons</li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-parent">
+                        <a class="uk-disabled">Physics 1</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="intro.html">Introduction</a></li>
+                            <li><a href="uvectors.html">Unit Vectors</a></li>
+                            <li><a href="torque.html">Torque</a></li>
+                            <li  class="uk-active"><a href="vsquantities.html">Vector and Scalar Quantities</a></li>
+                            <li><a href="">Heat Quantities</a></li>
+                            <li><a href="">Linear Momentum and Collision</a></li>
+                            <li><a href="">Work</a></li>
+                            <li><a href="">Newton's Law of Motion</a></li>
+                            <li><a href="">Uniformly Accelerated Rectilinear Motion</a></li>
+                            <li><a href="">Projectile Motion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-parent">
+                        <a class="uk-disabled">Physics 2</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="electromag.html">Electromagnetism</a></li>
+                            <li><a href="guasse.html">Gauss' Law</a></li>
+                            <li><a href="">Simple Harmonic Motion</a></li>
+                            <li><a href="">Capacitors</a></li>
+                            <li><a href="">Mechanical Waves</a></li>
+                            <li><a href="">Acoustics</a></li>
+                            <li><a href="">Current, Resistance and Electromotive Force</a></li>
+                            <li><a href="">Direct Current Circuits</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="uk-nav uk-nav-default" uk-nav="multiple: true;">
+                    <!-- Third Heading -->
+                    <li class="uk-nav-header"></li>
+                    <li class="uk-nav-header">About</li>
+                    <li class="uk-nav-divider"></li>
+                    <li>
+                        <a href="#">This App</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div> <!-- End of Canvas-->
+
+
+    <div class="uk-section">
+        <div class="uk-container uk-container-xsmall">
+            <h2> Gauss' Law </h2>
+            <ul uk-accordion="multiple: true">
+
+                <!-- Electromagnetism: The Magnetic Field -->
+                <li class="uk-open">
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Electric Flux (Φ)</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li>Electric flux is the measure of flow of the electric field through a given area. It is proportional to the number of electric field lines going through a normally perpendicular surface.</li>
+                            <li style="text-align: center"><img src="img/ElectricFlux.png" width="850" height="800"/></li>
+                            <li>Gauss’ law relates the net flux Φ of an electric field through a closed surface (a Gaussian surface) to the net charge qenc that is enclosed by that surface. It tells us that</li>
+                            
+                            <li></li>
+                             <li style="text-align: center"><img src="img/ElectricFluxNet.PNG" width="850" height="800"/></li>
+                             <li style="text-align: center"><img src="img/ElectricFluxSurface.PNG" width="850" height="800"/></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- Applications of Gauss’ Law-->
+                <li>
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span> Applications of Gauss’ Law </span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <h3>A.	Infinite Sheet of Charge </h3>
+                        <ul class="uk-list">
+                            <li>Let’s calculate the electric field from an infinite sheet of charge, with a charge density of <span><b>σ = qenc/A</b></span> (measured in C/m2).</li>
+                            <ul class="uk-list">
+                                <li style="text-align: center"><img src="img/InfiniteSheetCharge.PNG" width="850" height="800"/></li>
+                            </ul>
+                            <li>Vector Addition uses special methods which are not arithmetic. The particular method used depends on the orientation of the vectors and how many vectors are being considered.</li>
+                        </ul>
+                        
+                        <h3>B.	Infinite Line of Charge  </h3>
+                        <ul class="uk-list">
+                            <li>Let’s calculate the electric field a distance r from a line of electric charge infinite in extent with charge density <span><b>λ=qenc/L</b></span> (measured in C/m).</li>
+                            <ul class="uk-list">
+                                <li style="text-align: center"><img src="img/InfiniteLineCharge.PNG" width="850" height="800"/></li>
+                            </ul>
+                        </ul>
+                        
+                        <h3>C.	Spheres of Charge  </h3>
+                        <ul class="uk-list">
+                            <li>Let’s calculate the electric field a distance r from a line of electric charge infinite in extent with charge density <span><b>λ=qenc/L</b></span> (measured in C/m).</li>
+                            <ul class="uk-list">
+                                <li style="text-align: center"><img src="img/SpheresofCharge.PNG" width="850" height="800"/></li>
+                            </ul>
+                            <li>Since <b>|E|</b> is constant at a fixed radius, the total flux through the surfce is: </li>
+                            <li style="text-align: center"><img src="img/FluxSurfaceForm.PNG" width="350" height="300"/></li>
+                            <li>The situation changes for the electric <b><i>field inside a spherical shell or conducting solid sphere.</i></b> </li>
+                            <li style="text-align: center"><img src="img/ElectricField.PNG" width="900" height="1100"/></li>
+                            <li><b>Electric field of various symmetric charge distributions:</b> The following table lists electric fields caused by several symmetric charge distributions. In the table, q, Q, λ, and σ refer to the magnitudes of the quantities.</li>
+                            <table class="uk-table uk-table-hover uk-table-divider">
+                                <thead>
+                                    <tr>
+                                        <th><b>Charge Distribution</b></th>
+                                        <th><b>Point in Electric Field</b></th>
+                                        <th><b>Electric Field Magnitude</b></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Single point charge q</td>
+                                        <td>Distance r from q</td>
+                                        <td><img src="img/ElectricFieldMag1.PNG"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Infinite sheet of charge with uniform charge per unit area σ</td>
+                                        <td>Any point</td>
+                                        <td><img src="img/ElectricFieldMag2.PNG"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Infinite wire, charge per unit length λ</td>
+                                        <td>Distance r from wire</td>
+                                        <td><img src="img/ElectricFieldMag3.PNG"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Charge q on surface of conducting sphere with radius R</td>
+                                        <td>Outside sphere, r &gt; R<br><br>Inside sphere, r &lt; R</td>
+                                        <td><img src="img/ElectricFieldMag4.PNG"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b><i>Solid insulating sphere</i></b> with radius R,  charge Q distributed uniformly throughout volume</td>
+                                        <td>Outside sphere, r &gt; R <br><br> Inside sphere, r &lt; R </td>
+                                        <td><img src="img/ElectricFieldMag5.PNG"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </ul>
+                    </div>
+                </li>
+                
+                <!-- Sample Problems -->
+                <li>
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span> Sample Problems</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li>1.	A flat sheet of paper of area 0.250 m2 is oriented so that the normal to the sheet is at an angle of 600 to a uniform electric field of magnitude 14N/C. Find the magnitude of the electric flux through the sheet. </li>
+                            <li style="text-align: center"><img src="img/FluxSampleProb1.PNG" style=" width: 350px; height: 200px;"/></li>
+                            <li>2.	You measure an electric field of 1.25 x 106 N/C at a distance of 0.150 m from a point charge. There is no other source of electric field in the region other than this point charge. (a) What is the electric flux through the surface of a sphere that has this charge at its center and that has radius 0.150 m? (b) What is the magnitude of this charge?</li>
+                            <li>3.	The three small spheres shown in carry charges q1 = 4nC, q2 = -7.8nC, and q3 = 2.4nC. Find the net electric flux through each of the following closed surfaces shown in cross section in the figure: (a) S1; (b) S2; (c) S3; (d) S4; (e) S5.</li>
+                            <li style="text-align: center"><img src="img/GuassProb.PNG" style=" width: 400px; height: 200px;"/></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
