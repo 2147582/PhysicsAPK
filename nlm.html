@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body class="uk-background-muted">
+        <div class="uk-section-primary uk-preserve-color">
+                <nav class="uk-navbar uk-navbar-sticky">
+                    <div class="uk-navbar-left">
+                            <a class="uk-button uk-button-default uk-margin-small-right" uk-icon="icon: menu" uk-toggle="target: #offcanvas-overlay">
+                            </a>
+                            <!--<img data-src="img/p6.PNG" height="150" width="130" uk-img>-->
+                            <h5 class="uk-nav-header" style="color: white; font-size: 18px">SLU Physics</h5>
+                    </div>
+                    
+        
+                </nav>
+            </div>
+
+    <div id="offcanvas-overlay" uk-offcanvas="mode: slide; overlay: true">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-animation">
+            <div class="uk-panel">
+                <ul class="uk-nav uk-nav-default">
+                    <h3><a class="uk-link-reset" href="index.html">Home</a></h3>
+                    <!-- First Heading -->
+                    <li class="uk-nav-header">Lessons</li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-parent">
+                        <a class="uk-disabled">Physics 1</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="intro.html">Introduction</a></li>
+                            <li><a href="uvectors.html">Unit Vectors</a></li>
+                            <li><a href="torque.html">Torque</a></li>
+                            <li><a href="vsquantities.html">Vector and Scalar Quantities</a></li>
+                            <li><a href="hquantities.html">Heat Quantities</a></li>
+                            <li><a href="lmomenandcol.html">Linear Momentum and Collision</a></li>
+                            <li><a href="work.html">Work, Power, and Energy</a></li>
+                            <li class="uk-active"><a href="nlm.html">Newton's Law of Motion</a></li>
+                            <li><a href="uarm.html">Uniformly Accelerated Rectilinear Motion</a></li>
+                            <li><a href="pmotion.html">Projectile Motion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-parent">
+                        <a class="uk-disabled">Physics 2</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="">Electromagnetism</a></li>
+                            <li><a href="">Gauss' Law</a></li>
+                            <li><a href="">Simple Harmonic Motion</a></li>
+                            <li><a href="">Capacitors</a></li>
+                            <li><a href="">Mechanical Waves</a></li>
+                            <li><a href="">Acoustics</a></li>
+                            <li><a href="">Current, Resistance and Electromotive Force</a></li>
+                            <li><a href="">Direct Current Circuits</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="uk-nav uk-nav-default" uk-nav="multiple: true;">
+                    <!-- Third Heading -->
+                    <li class="uk-nav-header"></li>
+                    <li class="uk-nav-header">About</li>
+                    <li class="uk-nav-divider"></li>
+                    <li>
+                        <a href="about.html">This App</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div> <!-- End of Canvas-->
+
+
+    <div class="uk-section">
+        <div class="uk-container uk-container-xsmall">
+            <h2> Newton's Law of Motion </h2>
+            <ul uk-accordion="multiple: true">
+
+                <!-- Motion -->
+                <li class="uk-open">
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Motion</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li><b>Kinematics</b> is the language for describing motion of an object, which includes its position, velocity, and acceleration, but there was no consideration of what might influence that motion.</li>
+                            <li><b>Dynamics</b> studies the causes of motion. The two main factors we need to consider to answer question about why the motion of an object will change are the <i>forces</i> acting on an object and the <i>mass</i> of the object. We begin our study of <i>dynamics</i> by discussing the three basic laws of motion, which deal with forces and masses and were formulated by Isaac Newton</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- Force -->
+                <li>
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Force</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li><b>Concepts of Force</b></li>
+                            <ul class="uk-list uk-list-bullet">
+                                <li>It is exerted as a push or pull.</li>
+                                <li>Forces are what cause any change in the velocity (acceleration) of an object.</li>
+                                <li>Forces are combined according to the rules of vector algebra. The net force on a body is the vector sum of all the forces acting on the body.</li>
+                                <li>Units of force</li>
+                                <ul class="uk-list">
+                                    <li>The SI unit of force is the <b>Newton (N)</b>.</li>
+                                    <ul class="uk-list">
+                                        <li>• 1 N = 1 kg·m / s^2 </li>
+                                        <li>(A force that accelerates 1 kg body by exactly 1 m/s2 is defined to have a magnitude of 1 N.)</li>
+                                    </ul>
+                                    <li>The US Customary unit of force is a <b>pound (lb)</b>.</li>
+                                    <ul class="uk-list">
+                                        <li>• 1 lb = 1 slug·ft / s^2</li>
+                                    </ul>
+                                </ul>
+                            </ul><br>
+
+                            <li><b>Classes of Force</b></li>
+                            <ul class="uk-list uk-list-bullet">
+                                <li><i>Contact Forces</i> involve physical contact between two objects, that is, they involve physical contact between two objects.</li>
+                                <ul class="uk-list">
+                                    <li style="text-align: center"><img data-src="img/nlmForce.JPG" width="350" height="150" uk-img></li>
+                                    <li>When a coiled spring is pulled, as in <i>Figure a</i>, the spring stretches. When a stationary cart is pulled, as in <i>Figure b</i>, the cart moves. When a football is kicked, as in <i>Figure c</i>, it is both deformed and set in motion. These situations are all examples of a class of forces called contact forces.</li>
+                                </ul>
+                                <li><i>Field forces</i> act through empty space. No physical contact is required</li>
+                                <ul class="uk-list">
+                                    <li style="text-align: center"><img data-src="img/nlmForce2.JPG" width="350" height="150" uk-img></li>
+                                    <li>The gravitational force of attraction between two objects with mass, illustrated in <i>Figure d</i>, the electric force that one electric charge exerts on another, shown in <i>Figure e</i> (such as the attractive electric force between an electron and a proton that form a hydrogen atom), and the force a bar magnet exerts on a piece of iron <i>(Figure f)</i> are some examples of field forces.</li>
+                                </ul>
+                            </ul><br>
+                            
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- First Law -->
+                <li>
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Newton's First Law</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li><b>Law of Inertia</b></li>
+                            <li>In the absence of external forces and when viewed from an inertial reference frame, an object at rest remains at rest and an object in motion continues in motion with a constant velocity (that is, with a constant speed in a straight line).</li><br>
+                            
+                            <li><b>The Particle in Equilibrium</b></li>
+                            <li>If the acceleration of an object that can be modeled as a particle is zero, the object is said to be in equilibrium.  A body in equilibrium is a body that is either at rest or a body that is moving at uniform velocity. Mathematically, the net force acting on the object is zero.</li>
+                            <li style="text-align: center"><img data-src="img/nlmInertia.JPG" width="350" height="150" uk-img></li><br>
+
+                            <li><b>Inertia and Mass</b></li>
+                            <li>The tendency of an object to resist any attempt to change its velocity is called <i>inertia</i>.</li>
+                            <li><i>Mass</i> is that property of an object that specifies how much resistance an object exhibits to changes in its velocity. Mass is a measure of the inertia of an object</li><br>
+
+                            <li style="text-align: center"><b>Mass vs Weight</b></li>
+                            <li><i>Mass</i>.</li>
+                            <ul class="uk-list uk-list-bullet">
+                                <li>A measure of the amount of matter or material in a body</li>
+                                <li>Independent of the object’s surroundings</li>
+                                <li>Scalar quantity (obeys the rules of ordinary arithmetic)</li>
+                            </ul>
+                            <li><i>Weight</i>.</li>
+                            <ul class="uk-list uk-list-bullet">
+                                <li>Equal to the magnitude of the gravitational force (product of its mass and the freefall acceleration) exerted on the object</li>
+                                <li>Weight = mass x gravitational acceleration</li>
+                                <li>Weight will vary with location</li>
+                                <li>As a vector quantity, it is always directed downward or towards the center of the earth</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- Second Law -->
+                <li>
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Newton's Second Law</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li><b>Law of Acceleration</b></li>
+                            <li>The acceleration of an object is directly proportional to the net force acting on it, and is inversely proportional to the object's mass. The direction of the acceleration is in the direction of the net force acting on the object. Mathematically represented as:</li>
+                            <ul class="uk-list">
+                                <li style="text-align: center"><img data-src="img/nlmAcceleration.JPG" width="250" height="150" uk-img></li>
+                            </ul>
+
+                            <li><b>The Particle Under a Net Force</b></li>
+                            <li>If an object that can be modeled as a particle experiences an acceleration, there must be a nonzero net force acting on it.</li>
+                            <ul class="uk-list">
+                                <li style="text-align: center"><img data-src="img/nlmAcceleration2.JPG" width="150"
+                                        height="100" uk-img></li>
+                            </ul>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- Third Law -->
+                <li>
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Newton's Third Law</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li><b>Law of Action and Reaction</b></li>
+                            <li>Whenever one object exerts a force on a second object, the second exerts an equal force in the opposite direction on the first.</li>
+                            <ul class="uk-list">
+                                <li style="text-align: center"><img data-src="img/nlmAction.JPG" width="150"
+                                        height="100" uk-img></li>
+                            </ul>
+
+                            <li><b>Force of Friction</b></li>
+                            <li>When an object is in motion either on a surface or in a viscous medium such as air or water, there is resistance to the motion because the object interacts with its surroundings. We call such resistance a force of friction.</li><br>
+
+                            <li><i>Friction (f)</i></li>
+                            <li>• It is a tangential force acting on an object that opposes the sliding of that object on an adjacent surface with which it is in contact.</li>
+                            <li>• Primarily due to the roughness of the surfaces in contact.</li>
+                            <li>• Parallel to the surface and opposite to the direction of motion or of impending motion</li>
+                            <ul class="uk-list">
+                                <li><i>Two Types of Friction</i></li>
+                                <ul class="uk-list">
+                                    <li>1.	Static friction (fs) - Acts when motion is just impending. No actual motion yet.</li>
+                                    <li>1.	Kinetic friction (fk) - Acts when the body is already in motion.</li>
+                                    <li><i>The force of static friction is generally greater than the force of kinetic friction</i></li>
+                                </ul>
+                            </ul>
+                            <li>• Friction is proportional to the normal force, N.</li>
+                            <li>Whenever a body is in contact with a surface, whether the body is moving or not, there is always a reaction of the surface to the total perpendicular force exerted on it by the body. This is called the <i>Normal Force</i>. It is exerted by the surface on the body and is always perpendicular to the surfaces in contact</li>
+                            <li style="text-align: center"><img data-src="img/nlmFriction.JPG" width="250" height="100"uk-img></li>
+                            <ul class="uk-list">
+                                <li>Where: μ is the coefficient of friction</li>
+                                <li>The coefficient of friction depends on the surfaces in contact and are nearly independent of the area of contact.</li>
+                            </ul>
+                            <li>For static friction, the equals sign is valid only at impeding motion( the surfaces are on the verge of slipping) and use the inequality if the surfaces are not on the verge of slipping</li><br>
+                            <li>Friction is a force, so it simply is included in the ∑F in Newton’s Laws</li>
+                            <li>When solving problems involving Newton's laws and force, it is very important to draw a diagram showing all the forces acting on each object involved. Such a diagram is called a free-body diagram, or force diagram: choose one object, and draw an arrow to represent each force acting on it. Include every force acting on that object. If the problem involves more than one object, a separate free-body diagram is needed for each object. We consider for now, the likely forces that could be acting are gravity and contact forces (one object pushing or pulling another, normal force, friction).</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- Sample Problems -->
+                <li>
+                        <a class="uk-accordion-title" href="#">
+                            <h4 class="uk-heading-line"><span>Sample Problems</span></h4>
+                        </a>
+                        <div class="uk-accordion-content">
+                            <ul class="uk-list">
+                                
+                            </ul>
+                        </div>
+                    </li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
