@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body class="uk-background-muted">
+        <div class="uk-section-primary uk-preserve-color">
+                <nav class="uk-navbar uk-navbar-sticky">
+                    <div class="uk-navbar-left">
+                            <a class="uk-button uk-button-default uk-margin-small-right" uk-icon="icon: menu" uk-toggle="target: #offcanvas-overlay">
+                            </a>
+                            <!--<img data-src="img/p6.PNG" height="150" width="130" uk-img>-->
+                            <h5 class="uk-nav-header" style="color: white; font-size: 18px">SLU Physics</h5>
+                    </div>
+                    
+        
+                </nav>
+            </div>
+
+    <div id="offcanvas-overlay" uk-offcanvas="mode: slide; overlay: true">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-animation">
+            <div class="uk-panel">
+                <ul class="uk-nav uk-nav-default">
+                    <h3><a class="uk-link-reset" href="index.html">Home</a></h3>
+                    <!-- First Heading -->
+                    <li class="uk-nav-header">Lessons</li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-parent">
+                        <a class="uk-disabled">Physics 1</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="intro.html">Introduction</a></li>
+                            <li><a href="uvectors.html">Unit Vectors</a></li>
+                            <li><a href="torque.html">Torque</a></li>
+                            <li><a href="vsquantities.html">Vector and Scalar Quantities</a></li>
+                            <li><a href="hquantities.html">Heat Quantities</a></li>
+                            <li><a href="lmomenandcol.html">Linear Momentum and Collision</a></li>
+                            <li><a href="work.html">Work, Power, and Energy</a></li>
+                            <li><a href="nlm.html">Newton's Law of Motion</a></li>
+                            <li class="uk-active"><a href="uarm.html">Uniformly Accelerated Rectilinear Motion</a></li>
+                            <li><a href="pmotion.html">Projectile Motion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-parent">
+                        <a class="uk-disabled">Physics 2</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="">Electromagnetism</a></li>
+                            <li><a href="">Gauss' Law</a></li>
+                            <li><a href="">Simple Harmonic Motion</a></li>
+                            <li><a href="">Capacitors</a></li>
+                            <li><a href="">Mechanical Waves</a></li>
+                            <li><a href="">Acoustics</a></li>
+                            <li><a href="">Current, Resistance and Electromotive Force</a></li>
+                            <li><a href="">Direct Current Circuits</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="uk-nav uk-nav-default" uk-nav="multiple: true;">
+                    <!-- Third Heading -->
+                    <li class="uk-nav-header"></li>
+                    <li class="uk-nav-header">About</li>
+                    <li class="uk-nav-divider"></li>
+                    <li>
+                        <a href="about.html">This App</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div> <!-- End of Canvas-->
+
+
+    <div class="uk-section">
+        <div class="uk-container uk-container-xsmall">
+            <h2> Uniformly Accelerated Rectilinear Motion </h2>
+            <ul uk-accordion="multiple: true">
+
+                <!-- Motion -->
+                <li class="uk-open">
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Motion in One Dimension</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li>As a first step in studying classical mechanics, we describe the motion of an object while ignoring the interactions with external agents that might be affecting or modifying that motion. This portion of classical mechanics is called <i>kinematics</i> (The word kinematics has the same root as cinema.)</li>
+                            <li>Motion of an object represents a continuous change in the object’s position.</li><br>
+
+                            <li><b>Motion Along a Straight Line (Rectilinear Motion)</b></li>
+                            <li>We start our study with the simplest type of motion a body can undergo. This is called rectilinear motion or motion along a straight line. For the analysis, we will be considering the line of motion as a coordinate axis, i.e. the x-axis if the line of motion is horizontal or inclined or the y-axis if the line of motion is vertical.</li><br>
+
+                            <li><b>Basics Concepts:</b></li>
+                            <ul class="uk-list">
+                                <li><b>1. Time (t)</b></li>
+                                <ul class="uk-list">
+                                    <li>Measured in terms of change</li>
+                                    <li>Motion always takes place over a period of time</li>
+                                    <li><i>Time Instant</i> is a point in time, i.e. at the time 5 seconds after starting.</li>
+                                    <li><i>Time Interval</i> (∆t) is a length of time, i.e. during the time t1 = 5secs to t2 = 10 seconds, etc.</li>
+                                </ul>
+                                <li><b>2. Position (x)</b></li>
+                                <ul class="uk-list">
+                                    <li>This is to indicate the location of the body at any time as it moves. It is the distance from a given reference point along the path at any time.</li>
+                                    <li style="text-align: center"><img data-src="img/uarmBasics.JPG" width="350" height="150" uk-img></li>
+                                    <li>In cases where the line of motion is the y-axis, position is denoted by (y).</li>
+                                </ul>
+                                <li><b>3. Displacement (∆x)</b></li>
+                                <ul class="uk-list">
+                                    <li>Displacement is defined as the change in position during some time interval.</li>
+                                    <li style="text-align: center"><img data-src="img/uarmBasics2.JPG" width="350" height="150" uk-img></li>
+                                    <li>Displacement is different from distance traveled in the sense that displacement is a vector quantity directed from the initial to the final position. Distance is the length of a path followed by a particle.  However, in one directional rectilinear motion, the magnitude of the displacement is the same as the distance traveled.</li>
+                                </ul>
+                                <li><b>4. Velocity (∆x)</b></li>
+                                <ul class="uk-list">
+                                    <li>The body describes how fast that body is moving including its direction of motion.</li>
+                                    <li><i>Average velocity (Vave)</i> is the rate of change in the position of the body, that is the displacement of the body per time interval taken between two points along its path.</li>
+                                    <li style="text-align: center"><img data-src="img/uarmBasics3.JPG" width="350" height="150" uk-img></li>
+                                    <li><i>Instantaneous velocity (v)</i> is the velocity of a body at a particular time instant or point along its path.</li>
+                                    <li>Speed – <i>distance</i> per unit time.</li>
+                                </ul>
+                                <li><b>4. Acceleration (∆x)</b></li>
+                                <ul class="uk-list">
+                                    <li>The body is the rate of change in the velocity of the body.</li>
+                                    <li><i>Average acceleration (aave)</i> is the acceleration of the body taken during a time interval or during a certain displacement. It is the rate of change of the velocity</li>
+                                    <li style="text-align: center"><img data-src="img/uarmBasics4.JPG" width="350" height="150" uk-img></li>
+                                    <li><i>Instantaneous acceleration (a)</i> is the acceleration at a given time instant or point along its path. </li>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- UARM -->
+                <li>
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Uniformly Accelerated Rectilinear Motion (UARM)</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li>A very common and simple type of one-dimensional motion is that the acceleration is
+                                constant. In such a case, at any instant within the interval, and the velocity changes
+                                at the same rate throughout the motion.</li><br>
+                            <li>Basic equations used for analyzing UARM:</li>
+                            <ul class="uk-list uk-list-bullet">
+                                <li>To simplify the equations, it will be assumed here that <u>at time t = 0, the
+                                        position xi = 0</u></li>
+                                <li>Thus the time interval <i>Δt will be the same as time instant t (Δt = t) because ti
+                                        = 0 and tf = t.</i></li>
+                                <li>The displacement <i>Δx will also become same as position x</i> (Δx = x) because xi =
+                                    0 and xf = x at time instant t.</li>
+                                <li>Units of force</li>
+                                <ul class="uk-list">
+                                    <li style="text-align: center"><img data-src="img/uarmEquations.JPG" width="250"
+                                            height="100" uk-img></li>
+                                </ul>
+                            </ul>
+                        </ul><br>
+                        
+                        <ul class="uk-list">
+                            <li>Free Fall – a special case of rectilinear motion with constant acceleration.</li>
+                            <ul class="uk-list">
+                                <li>The path is always vertical.</li>
+                                <li>The acceleration is constant and of known magnitude and direction.</li>
+                                <li>a = g = -9.8 m/s^2 (in the MKS system)</li>
+                                <li> = -980 cm/s^2 (in the CGS system)</li><br>
+                                <li>The (-) sign indicates that the acceleration is directed downward.</li>
+                            </ul>
+                        </ul>
+                        <ul class="uk-list">
+                            <li>Equations applied in the analysis:</li>
+                            <ul class="uk-list">
+                                <li style="text-align: center"><img data-src="img/uarmEquations2.JPG" width="250"
+                                        height="100" uk-img></li>
+                            </ul>
+                            <li>Where:</li>
+                            <ul class="uk-list">
+                                <li>g = -9.8 m/s^2</li>
+                                <li>y = vertical displacement of the body and it can be (+) or (-)</li>
+                                <li><i>* (+) if measured above the starting point</i></li>
+                                <li><i>* (-) if measured below the starting point</i></li>
+                                <li>v = (+) upward motion</li>
+                                <li>(-) downward motion</li>
+
+                            </ul>
+                        </ul>
+                    </div>
+                </li>
+                
+
+                <!-- Sample Problems -->
+                <li>
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Sample Problems</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

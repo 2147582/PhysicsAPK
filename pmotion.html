@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body class="uk-background-muted">
+        <div class="uk-section-primary uk-preserve-color">
+                <nav class="uk-navbar uk-navbar-sticky">
+                    <div class="uk-navbar-left">
+                            <a class="uk-button uk-button-default uk-margin-small-right" uk-icon="icon: menu" uk-toggle="target: #offcanvas-overlay">
+                            </a>
+                            <!--<img data-src="img/p6.PNG" height="150" width="130" uk-img>-->
+                            <h5 class="uk-nav-header" style="color: white; font-size: 18px">SLU Physics</h5>
+                    </div>
+                    
+        
+                </nav>
+            </div>
+
+    <div id="offcanvas-overlay" uk-offcanvas="mode: slide; overlay: true">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-animation">
+            <div class="uk-panel">
+                <ul class="uk-nav uk-nav-default">
+                    <h3><a class="uk-link-reset" href="index.html">Home</a></h3>
+                    <!-- First Heading -->
+                    <li class="uk-nav-header">Lessons</li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-parent">
+                        <a class="uk-disabled">Physics 1</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="intro.html">Introduction</a></li>
+                            <li><a href="uvectors.html">Unit Vectors</a></li>
+                            <li><a href="torque.html">Torque</a></li>
+                            <li><a href="vsquantities.html">Vector and Scalar Quantities</a></li>
+                            <li><a href="hquantities.html">Heat Quantities</a></li>
+                            <li><a href="lmomenandcol.html">Linear Momentum and Collision</a></li>
+                            <li><a href="work.html">Work, Power, and Energy</a></li>
+                            <li><a href="nlm.html">Newton's Law of Motion</a></li>
+                            <li><a href="uarm.html">Uniformly Accelerated Rectilinear Motion</a></li>
+                            <li class="uk-active"><a href="pmotion.html">Projectile Motion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-parent">
+                        <a class="uk-disabled">Physics 2</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="">Electromagnetism</a></li>
+                            <li><a href="">Gauss' Law</a></li>
+                            <li><a href="">Simple Harmonic Motion</a></li>
+                            <li><a href="">Capacitors</a></li>
+                            <li><a href="">Mechanical Waves</a></li>
+                            <li><a href="">Acoustics</a></li>
+                            <li><a href="">Current, Resistance and Electromotive Force</a></li>
+                            <li><a href="">Direct Current Circuits</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="uk-nav uk-nav-default" uk-nav="multiple: true;">
+                    <!-- Third Heading -->
+                    <li class="uk-nav-header"></li>
+                    <li class="uk-nav-header">About</li>
+                    <li class="uk-nav-divider"></li>
+                    <li>
+                        <a href="about.html">This App</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div> <!-- End of Canvas-->
+
+
+    <div class="uk-section">
+        <div class="uk-container uk-container-xsmall">
+            <h2> Projectile Motion </h2>
+            <ul uk-accordion="multiple: true">
+
+                <!-- Motion in Two Dimension -->
+                <li class="uk-open">
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Motion in Two Dimension</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <p>Motion in two dimensions can be modeled as two independent motions in each of the two perpendicular directions associated with the x and y axes. That is, any influence in the y direction does not affect the motion in the x direction and vice versa.</p>
+                    </div>
+                </li>
+
+                <!-- Projectile Motion -->
+                <li>
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Projectile Motion</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li>The path is that of an inverted parabola, symmetric about a vertical line that passes thru the vertex (highest point).</li>
+                            <li><i>* Projectile – any object launched into space without power of its own and is free to move under the action of gravity.</i></li>
+                            <li><i>* Trajectory – path followed by a projectile.</i></li>
+                            <li><i>* Range – horizontal displacement.</i></li>
+                            <li><b>Projectile motion</b> is one type of two-dimensional motion under constant acceleration, where ax=0 and ay = g = -9.8m/s2. It is useful to think of projectile motion as the superposition of two motions: (1) constant-velocity motion in the x-direction (vfx = vix = vx) and (2) free-fall motion in the vertical direction subject to a constant downward acceleration of magnitude g=9.80 m/s^2. </li>
+                        </ul>
+
+                        <!-- This is an anchor toggling the Sample -->
+                        <a href="#sample-Figure" uk-toggle>Sample Figure </a>
+                        <!-- This is the modal -->
+                        <div id="sample-Figure" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <h2 class="uk-modal-title">Sample Figure (Projectile)</h2>
+                                <p>At the top of the trajectory, the projectile has zero vertical velocity (vy = 0), but its vertical acceleration is still -g</p>
+                                <img data-src="img/pmotionImage.JPG" width="500" height="300" uk-img>
+                                <p>Vertically, the projectile exhibits constant-acceleration motion in response to the earth’s gravitational pull. Thus, its vertical velocity changes by equal amounts during equal time intervals.</p>
+                                <p>Horizontally, the projectile exhibits constant-velocity motion: Its horizontal acceleration is zero, so it moves equal x-distances in equal time intervals.</p>
+                                <p class="uk-text-center">
+                                    <button class="uk-button uk-button-default uk-modal-close"
+                                        type="button">Close</button>
+                                </p>
+                            </div>
+                        </div>
+
+                        <ul class="uk-list">
+                            <li>Equations for Projectile Motion:</li>
+                            <ul class="uk-list">
+                                <li>Horizontal Component.</li>
+                                <ul class="uk-list">
+                                    <li style="text-align: center"><img data-src="img/pmotionHorizontal.JPG" width="250" height="100" uk-img></li>
+                                </ul><br>
+                                <li>Vertical Component.</li>
+                                <ul class="uk-list">
+                                    <li style="text-align: center"><img data-src="img/pmotionVertical.JPG" width="300" height="150" uk-img></li>    
+                                </ul>
+                                <li>Let:</li>
+                                <li>y = (+) if measured above reference point</li>
+                                <li>(-) if measured below reference point</li>
+                                <li>v = (+) if directed upward</li>
+                                <li>(-) if directed downward</li>
+                                <li><i>*vi = initial velocity</i></li>
+                                <li><i>*vf = final velocity</i></li>
+                                    <table class="uk-table uk-table-divider">
+                                            <tbody>
+                                                <tr>
+                                                    <!-- This is an anchor toggling the Sample -->
+                                                    <td><a href="#xy-Component" uk-toggle>X and Y Component </a></td>
+                                                    <!-- This is an anchor toggling the Sample -->
+                                                    <td><a href="#velo-Final" uk-toggle>For Final Velocity</a></td>
+                                                </tr>
+                                            </tbody>
+                                    </table>
+                                
+                                <!-- This is the Component modal -->
+                                <div id="xy-Component" uk-modal>
+                                    <div class="uk-modal-dialog uk-modal-body">
+                                        <h2 class="uk-modal-title">Component for Initial Velocity</h2>
+                                        <img data-src="img/pmotionComponent.JPG" width="300" height="200" uk-img>
+                                        <p class="uk-text-center">
+                                            <button class="uk-button uk-button-default uk-modal-close"
+                                                type="button">Close</button>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- This is the Final modal -->
+                                <div id="velo-Final" uk-modal>
+                                    <div class="uk-modal-dialog uk-modal-body">
+                                        <h2 class="uk-modal-title">Final Velocity</h2>
+                                        <img data-src="img/pmotionFinal.JPG" width="500" height="300" uk-img>
+                                        <p class="uk-text-center">
+                                            <button class="uk-button uk-button-default uk-modal-close"
+                                                type="button">Close</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </ul><br>
+                            <li></li>
+                        </ul>
+                    </div>
+                </li>
+                
+
+                <!-- Sample Problems -->
+                <li>
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Sample Problems</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
