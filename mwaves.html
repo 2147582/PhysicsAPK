@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body class="uk-background-muted">
+    <div class="uk-section-primary uk-preserve-color">
+        <nav class="uk-navbar uk-navbar-sticky">
+            <div class="uk-navbar-left">
+                <a class="uk-button uk-button-default uk-margin-small-right" uk-icon="icon: menu"
+                    uk-toggle="target: #offcanvas-overlay">
+                </a>
+
+            </div>
+            <p>Physics</p>
+
+        </nav>
+    </div>
+
+    <div id="offcanvas-overlay" uk-offcanvas="mode: slide; overlay: true">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-animation">
+            <div class="uk-panel">
+                <ul class="uk-nav uk-nav-default">
+                    <h3><a class="uk-link-reset" href="index.html">Home</a></h3>
+                    <!-- First Heading -->
+                    <li class="uk-nav-header">Lessons</li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-parent">
+                        <a class="uk-disabled">Physics 1</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="intro.html">Introduction</a></li>
+                            <li><a href="uvectors.html">Unit Vectors</a></li>
+                            <li><a href="torque.html">Torque</a></li>
+                            <li  class="uk-active"><a href="vsquantities.html">Vector and Scalar Quantities</a></li>
+                            <li><a href="hquantities.html">Heat Quantities</a></li>
+                            <li><a href="lmomenandcol.html">Linear Momentum and Collision</a></li>
+                            <li><a href="work.html">Work</a></li>
+                            <li><a href="nlm.html">Newton's Law of Motion</a></li>
+                            <li><a href="uarm.html">Uniformly Accelerated Rectilinear Motion</a></li>
+                            <li><a href="pmotion.html">Projectile Motion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-parent">
+                        <a class="uk-disabled">Physics 2</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="electromag.html">Electromagnetism</a></li>
+                            <li><a href="guasse.html">Gauss' Law</a></li>
+                            <li><a href="shm.html">Simple Harmonic Motion</a></li>
+                            <li><a href="capacitors.html">Capacitors</a></li>
+                            <li><a href="mwaves.html">Mechanical Waves</a></li>
+                            <li><a href="acoustics.html">Acoustics</a></li>
+                            <li><a href="creforce.html">Current, Resistance and Electromotive Force</a></li>
+                            <li><a href="dccircuits.html">Direct Current Circuits</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="uk-nav uk-nav-default" uk-nav="multiple: true;">
+                    <!-- Third Heading -->
+                    <li class="uk-nav-header"></li>
+                    <li class="uk-nav-header">About</li>
+                    <li class="uk-nav-divider"></li>
+                    <li>
+                        <a href="#">This App</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div> <!-- End of Canvas-->
+
+
+    <div class="uk-section">
+        <div class="uk-container uk-container-xsmall">
+            <h2> WAVE MOTION: MECHANICAL WAVES </h2>
+            <ul uk-accordion="multiple: true">
+
+                <!-- WAVE MOTION: MECHANICAL WAVES -->
+                <li class="uk-open">
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Definition</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li>Wave ~ any disturbance from an equilibrium condition which travels or propagates with time from one region in space to another. <br>Ex: water waves and sound waves</li>
+                            
+                            <h4 style="text-align: center">Classification of Waves</h4>
+                            <li><b>Mechanical waves</b> - waves wherein the disturbance travel thru a material medium <br>Ex: sound waves - need a material medium to be transmitted</li>
+                            <li><b>Electromagnetic waves</b> - waves wherein the disturbance travel through empty space <br>Ex: radio waves, TV signals, microwaves, X-rays</li>
+                            <li><b>Matter waves</b> - associated with electrons, protons, and other fundamental particles, and even atoms and molecules</li>
+                            
+                            <h4 style="text-align: center">Mechanical Waves</h4>
+                            <li>Types of mechanical waves:</li>
+                            <ol>
+                                <li><b>Transverse waves</b> - the particles vibrate perpendicular to the direction of the waves <br>Ex: waves traveling thru a stretched string, cord or wire</li>
+                                <li style="text-align: center"><img src="img/TransverseWaves.PNG"/></li>
+                                <li><b>Longitudinal or Compressional Waves</b> - the particles vibrate parallel to the direction of the waves <br>Ex: waves traveling thru liquids, air, metal bars or rod</li>
+                                <li style="text-align: center"><img src="img/LorCWaves.PNG"/></li>
+                            </ol>
+                            <li>* When longitudinal waves travel through a medium, there are alternate compression and rarefaction regions.</li>
+                            
+                            <h4>Properties of Waves:</h4>
+                            <ol>
+                                <li>Amplitude (A) - maximum displacement of a particle in the medium</li>
+                                <li>Wavelength (λ) - distance between two (2) consecutive particles which are of the same phase (i.e. same displacement and same velocity)</li>
+                                <li>Frequency (f) - number of vibrations made by each particle per second</li>
+                                <li>Period (T) – time to complete one cycle</li>
+                                <li>Speed of propagation (V) - the distance traveled by the particle in the medium per second<img src="img/GenEqnWaves.PNG"/></li>
+                            </ol>
+                        </ul>
+                    </div>
+                </li>
+                
+                <!-- MATHEMATICAL REPRESENTATION OF WAVE -->
+                <li class="uk-open">
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>MATHEMATICAL REPRESENTATION OF WAVE</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li>A wave cannot be analyzed completely unless its mathematical description or equation is used. Just like any other curve, a wave is also expressed by means of an equation. Ordinarily, the equation is a simple sine or cosine function but since it is a traveling wave, consideration is made on the distance it travels thru the medium during a time, t.</li>
+                            <li style="text-align: center"><img src="img/GenEqnMathWaves.PNG"/></li>
+                            
+                            <h4 style="text-align: center">STATIONARY (STANDING) WAVES</h4>
+                            <li>Stationary or standing waves formed when two component waves (i.e. incident and reflected waves) of similar properties travel in opposite directions though the same medium.</li>
+                            <li style="text-align: center"><img src="img/StationaryWaves.PNG"/></li>
+                            <li><i>(a)	Five snapshots of a wave traveling to the right, at the times t indicated below part (c) (T is the period of oscillation). (b) Five snapshots of a wave identical to that in (a) but traveling to the left, at the same times t. (c) Corresponding snapshots for the superposition of the two waves on the same string. At t = 0, ½ T, and T, fully constructive interference occurs because of the alignment of peaks with peaks and valleys with valleys. At t = 1/4T and 3/4T, fully destructive interference occurs because of the alignment of peaks with valleys. </i></li>
+                            <li>As the waves move through each other, some points never move (<b>nodes</b>) and some move the most (<b>antinodes</b>).</li>
+                            <li>From the figure, we can derive a wave function for that specific standing wave by adding the wave functions y1(x, t) and y2(x, t):</li>
+                            <li style="text-align: center"><img src="img/Nodes.PNG"/></li>
+                            <li>The principle of superposition gives, for the combined wave (stationary wave):</li>
+                            <li style="text-align: center"><img src="img/CombinedWave.PNG"/></li>
+                            
+                            <h4 style="text-align: center">Modes of Vibration</h4>
+                            <ul>
+                                <li>•	Modes – frequencies of waves associated with their wave patterns</li>
+                                <li>•	Harmonics – a note of which the vibration rate is a whole number <br> <span style="padding: 5em">–	a note whose frequency is a multiple of the fundamental frequency</span></li>
+                                <li>•	Overtone – a term preferred by musicians instead of harmonics</li>
+                            </ul>
+                            
+                            <h4>I.	Modes of Vibration of a String Fixed at Both Ends:</h4>
+                            <li style="text-align: center"><img src="img/HarmonicFreq.PNG"/></li>
+                            <li>Since both ends of the string are fixed in position, the ends must be nodes in the standing waves; we can observe from the figures that the length L of the string must be an integer number of half wavelength.</li>
+                            <li style="text-align: center"><img src="img/fundGenFreq.PNG"/></li>
+                            <li>But the<b><i>VELOCITY</i></b>of wave traveling thru vibrating strings, </li>
+                            <li style="text-align: center"><img src="img/VelocityTraveling.PNG"/></li>
+                            <li>*For string fixed at both ends, the harmonic number is the same as the number of segments.</li>
+                            
+                            <h4>II.	Modes of Vibration of a Rod Clamped at One End:</h4>
+                            <li>•	It will always be a node at clamped end and an antinode at the free end.</li>
+                            <li style="text-align: center"><img src="img/HarmonicFreqOvertone.PNG"/></li>
+                            <li style="text-align: center"><img src="img/GenEqn.PNG"/></li>
+                            <li>The <b><i>VELOCITY</i></b> of wave traveling thru metal rods is:</li>
+                            <li style="text-align: center"><img src="img/VelocityWaveTraveling.PNG"/></li>
+                            
+                            <h4>III.	Modes of Vibration of a Rod Fixed at Midpoint:</h4>
+                            <li>•	It will always be a node at midpoint and antinode at the ends.</li>
+                            <li style="text-align: center"><img src="img/HarmonicFreqGenForm.PNG"/></li>
+                            
+                            <h4>IV.	Modes of Vibration of an Air Column:</h4>
+                            <li>Pipes can either be open on both ends or on only one end. The open ends act as free-end reflectors (producing antinodes) and the closed ends act as fixed-end reflectors (producing nodes).</li>
+                            <li><b>A.	OPEN PIPE</b></li>
+                            <li style="text-align: center"><img src="img/OpenPipe.PNG"/></li>
+                            <li>For the general equation:</li>
+                            <li style="text-align: center"><img src="img/GenFormHarmonic.PNG"/></li>
+                            <li>The <b><i>VELOCITY</i></b> of wave traveling thru air is:</li>
+                            <li style="text-align: center"><img src="img/VelocityAir.PNG"/></li>
+                            <li><b>B.	CLOSED PIPE</b></li>
+                            <li style="text-align: center"><img src="img/ClosedPipe.PNG"/></li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <!-- Sample Problem -->
+                <li class="uk-open">
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Sample Problems</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li>1.	A sinusoidal wave of wavelength 2 m and amplitude 0.1 m travels on a string with a speed of 1 m/s to the right. At t = 0, the left end of the string is at the origin. For this wave, find (a) the frequency, (b) the angular frequency, (c) the angular wave number, and (d) the wave function in SI units. Determine the equation of motion in SI units for (e) the left end of the string and (f) the point on the string at x = 1.5 m to the right of the left end. (g) What is the maximum speed of any element of the string?</li>
+                            <li>2.	Transverse waves on a string have wave speed 8m/s, amplitude 0.07m, and wavelength 0.32m. The waves travel in the negative x-direction, and at t = 0 the x = 0 end of the string has its maximum upward displacement. (a) Find the frequency, period, and wave number of these waves. (b) Write a wave function describing the wave. (c) Find the transverse displacement of a particle at x = 0.36m at time t = 0.15s.</li>
+                            <li>3.	A transverse traveling wave on a taut wire has an amplitude of 0.200 mm and a frequency of 500 Hz. It travels with a speed of 196 m/s. (a) Write an equation in SI units of the form y = A sin (kx - ωt) for this wave. (b) The mass per unit length of this wire is 4.10 g/m. Find the tension in the wire.</li>
+                            <li>4.	A 2-m-long wire having a mass of 0.1 kg is fixed at both ends. The tension in the wire is maintained at 20 N. (a) What are the frequencies of the first three allowed modes of vibration? (b) If a node is observed at a point 0.400 m from one end, in what mode and with what frequency is it vibrating?</li>
+                            <li>5.	A pipe open at both ends has a fundamental frequency of 300 Hz when the temperature is 0°C. (a) What is the length of the pipe? (b) What is its third harmonic frequency at a temperature of 30°C?</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
