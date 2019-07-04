@@ -102,12 +102,12 @@
                             
                             <h4 style="text-align: center">Mechanical Waves</h4>
                             <li>Types of mechanical waves:</li>
-                            <ol>
-                                <li><b>Transverse waves</b> - the particles vibrate perpendicular to the direction of the waves <br>Ex: waves traveling thru a stretched string, cord or wire</li>
-                                <li style="text-align: center"><img src="img/TransverseWaves.PNG"/></li>
-                                <li><b>Longitudinal or Compressional Waves</b> - the particles vibrate parallel to the direction of the waves <br>Ex: waves traveling thru liquids, air, metal bars or rod</li>
-                                <li style="text-align: center"><img src="img/LorCWaves.PNG"/></li>
-                            </ol>
+                            <ul>
+                                <li><b>1. Transverse waves</b> - the particles vibrate perpendicular to the direction of the waves <br>Ex: waves traveling thru a stretched string, cord or wire</li>
+                                <li style="text-align: center"><img src="img/TransverseWaves.PNG"/></li><br>
+                                <li><b>2. Longitudinal or Compressional Waves</b> - the particles vibrate parallel to the direction of the waves <br>Ex: waves traveling thru liquids, air, metal bars or rod</li>
+                                <li style="text-align: center"><img data-src="img/LorCWaves.PNG"/></li>
+                            </ul>
                             <li>* When longitudinal waves travel through a medium, there are alternate compression and rarefaction regions.</li>
                             
                             <h4>Properties of Waves:</h4>
@@ -116,7 +116,7 @@
                                 <li>Wavelength (λ) - distance between two (2) consecutive particles which are of the same phase (i.e. same displacement and same velocity)</li>
                                 <li>Frequency (f) - number of vibrations made by each particle per second</li>
                                 <li>Period (T) – time to complete one cycle</li>
-                                <li>Speed of propagation (V) - the distance traveled by the particle in the medium per second<img src="img/GenEqnWaves.PNG"/></li>
+                                <li>Speed of propagation (V) - the distance traveled by the particle in the medium per second<img data-src="img/mwave1.JPG" uk-img/></li>
                             </ol>
                         </ul>
                     </div>
@@ -125,59 +125,154 @@
                 <!-- MATHEMATICAL REPRESENTATION OF WAVE -->
                 <li>
                     <a class="uk-accordion-title" href="#">
-                        <h4 class="uk-heading-line"><span>MATHEMATICAL REPRESENTATION OF WAVE</span></h4>
+                        <h4 class="uk-heading-line"><span>Mathematical Representation of Wave</span></h4>
                     </a>
                     <div class="uk-accordion-content">
                         <ul class="uk-list">
                             <li>A wave cannot be analyzed completely unless its mathematical description or equation is used. Just like any other curve, a wave is also expressed by means of an equation. Ordinarily, the equation is a simple sine or cosine function but since it is a traveling wave, consideration is made on the distance it travels thru the medium during a time, t.</li>
-                            <li style="text-align: center"><img src="img/GenEqnMathWaves.PNG"/></li>
+                            <li>General Equation:</li>
+                            <ul>
+                                <li><img data-src="img/mwave2.JPG" uk-img/></li>
+                            </ul>
+                            <li>Where:</li>
+                            <ul>
+                                <li>A = amplitude</li>
+                                <li>ω = 2πf = angular frequency</li>
+                                <li>k <img data-src="img/mwave3.JPG" uk-img/> = wave number or propagation number</li>
+                                <li>y = the displacement of a particle in the medium during a time t which is at a distance x from the source</li>
+                                <li>(-) ωt = moving in the +x-direction</li>
+                                <li>(+) ωt = moving in the -x-direction</li>
+                                <li>∅ = phase angle</li>
+                            </ul>
                             
                             <h4 style="text-align: center">STATIONARY (STANDING) WAVES</h4>
                             <li>Stationary or standing waves formed when two component waves (i.e. incident and reflected waves) of similar properties travel in opposite directions though the same medium.</li>
                             <li style="text-align: center"><img src="img/StationaryWaves.PNG"/></li>
-                            <li><i>(a)	Five snapshots of a wave traveling to the right, at the times t indicated below part (c) (T is the period of oscillation). (b) Five snapshots of a wave identical to that in (a) but traveling to the left, at the same times t. (c) Corresponding snapshots for the superposition of the two waves on the same string. At t = 0, ½ T, and T, fully constructive interference occurs because of the alignment of peaks with peaks and valleys with valleys. At t = 1/4T and 3/4T, fully destructive interference occurs because of the alignment of peaks with valleys. </i></li>
+                            <li class="uk-text-justify"><i>(a)	Five snapshots of a wave traveling to the right, at the times t indicated below part (c) (T is the period of oscillation). (b) Five snapshots of a wave identical to that in (a) but traveling to the left, at the same times t. (c) Corresponding snapshots for the superposition of the two waves on the same string. At t = 0, ½ T, and T, fully constructive interference occurs because of the alignment of peaks with peaks and valleys with valleys. At t = 1/4T and 3/4T, fully destructive interference occurs because of the alignment of peaks with valleys. </i></li>
                             <li>As the waves move through each other, some points never move (<b>nodes</b>) and some move the most (<b>antinodes</b>).</li>
                             <li>From the figure, we can derive a wave function for that specific standing wave by adding the wave functions y1(x, t) and y2(x, t):</li>
-                            <li style="text-align: center"><img src="img/Nodes.PNG"/></li>
+                            <li>Where:</li>
+                            <ul>
+                                <li>y1(x,t) = Asin(kx - ωt)</li>
+                                <ul>
+                                    <li>(incident wave traveling to the right)</li>
+                                </ul>
+                                <li>y2(x,t) = Asin(kx+ ωt)</li>
+                                <ul>
+                                    <li>(reflected wave traveling to the left)</li>
+                                </ul>
+                            </ul>
+                            
                             <li>The principle of superposition gives, for the combined wave (stationary wave):</li>
-                            <li style="text-align: center"><img src="img/CombinedWave.PNG"/></li>
+                            <li style="text-align: center"> ys(x,t) =  y1+y2 =  Asin(kx - ωt) + Asin(kx + ωt)</li>
+                            <ul>
+                                <li>*Review: cos(A±B) = cosAcosB ∓ sinAsinB</li>
+                                <li>sin(A±B) = sinAcosB ± cosAsinB</li>
+                            </ul>
+                            <li style="text-align: center"> ys(x,t)  =  A[sin(kx)cos(ωt)-cos(kx)sin(ωt)] + A[sin(kx)cos(ωt)+cos(kx)sin(ωt)] </li>
+                            <ul>
+                                <li>ys(x,t)  =  2Asin(kx)cos(ωt)</li>
+                                <li>ys(x,t)  = <u>ASWsin(kx)</u>cos(ωt)</li>
+                                <ul>
+                                    <li>magnitude - gives amplitude at position x</li>
+                                    <li>Asw = amplitude of the standing wave</li>   
+                                </ul>
+                            </ul>
                             
                             <h4 style="text-align: center">Modes of Vibration</h4>
+                            <li>•	Modes </li>
                             <ul>
-                                <li>•	Modes – frequencies of waves associated with their wave patterns</li>
-                                <li>•	Harmonics – a note of which the vibration rate is a whole number <br> <span style="padding: 5em">–	a note whose frequency is a multiple of the fundamental frequency</span></li>
-                                <li>•	Overtone – a term preferred by musicians instead of harmonics</li>
+                                <li>Frequencies of waves associated with their wave patterns.</li>
+                            </ul>
+                            <li>•	Harmonics </li>
+                            <ul>
+                                <li>A note of which the vibration rate is a whole number.</li>
+                                <li>A note whose frequency is a multiple of the fundamental frequency.</li>
+                            </ul>
+                               
+                            <li>•	Overtone </li>
+                            <ul>
+                                <li>A term preferred by musicians instead of harmonics.</li>
                             </ul>
                             
                             <h4>I.	Modes of Vibration of a String Fixed at Both Ends:</h4>
-                            <li style="text-align: center"><img src="img/HarmonicFreq.PNG"/></li>
+                            <li style="text-align: center"><img data-src="img/mwave4.JPG" uk-img/></li>
                             <li>Since both ends of the string are fixed in position, the ends must be nodes in the standing waves; we can observe from the figures that the length L of the string must be an integer number of half wavelength.</li>
-                            <li style="text-align: center"><img src="img/fundGenFreq.PNG"/></li>
-                            <li>But the<b><i>VELOCITY</i></b>of wave traveling thru vibrating strings, </li>
-                            <li style="text-align: center"><img src="img/VelocityTraveling.PNG"/></li>
+                            <li>For the fundamental frequency:</li>
+                            <li style="text-align: center"><img data-src="img/mwave5.JPG" uk-img/></li>
+                            <li>For the General Equation:</li>
+                            <li style="text-align: center"><img data-src="img/mwave6.JPG" uk-img/></li><br>
+
+                            <li>But the <b><i>VELOCITY</i></b> of wave traveling thru vibrating strings, </li>
+                            <li>Cords or wires is: <img data-src="img/mwave7.JPG" uk-img/></li>
+                            <li>Where:</li>
+                            <ul>
+                                <li>T = tension on the string/cord/wire, Newton</li>
+                                <li>	μ  =  mass per unit length of the string</li>
+                                <li>=  m/L , kg/m</li>
+                                <li>μ  =  linear density</li>
+                                <li>=  ρA</li>
+                            </ul><br>
+                            <li>Where:</li>
+                            <ul>
+                                <li>ρ  =  density of string</li>
+                                <li>=  SG x mass density of water</li>
+                                <li>A  = cross-sectional area of string </li>
+                            </ul><br>
+                            <li>Therefore:</li>
+                            <ul>
+                                <li><img data-src="img/mwave8.JPG" uk-img/></li>
+                            </ul>
+
                             <li>*For string fixed at both ends, the harmonic number is the same as the number of segments.</li>
                             
                             <h4>II.	Modes of Vibration of a Rod Clamped at One End:</h4>
                             <li>•	It will always be a node at clamped end and an antinode at the free end.</li>
-                            <li style="text-align: center"><img src="img/HarmonicFreqOvertone.PNG"/></li>
-                            <li style="text-align: center"><img src="img/GenEqn.PNG"/></li>
+                            <li style="text-align: center"><img data-src="img/mwave9.JPG" uk-img/></li>
+                            <li>For General Equations:</li>
+                            <ul>
+                                <li><img data-src="img/mwave10.JPG" uk-img/></li>
+                            </ul>
+
                             <li>The <b><i>VELOCITY</i></b> of wave traveling thru metal rods is:</li>
-                            <li style="text-align: center"><img src="img/VelocityWaveTraveling.PNG"/></li>
+                            <div class="uk-panel">
+                                <img class="uk-align-left uk-margin-remove-adjacent" src="img/mwave11.JPG" alt="Example image">
+                                <p>where: Y = Young's modulus of elasticity, Pa</p>
+                                <p>ρ = density of rod or bar</p>
+                            </div>
+                            <li style="text-align: center"><i>Young's modulus of elasticity</i></li>
+                            <li>Y = stress/strain</li>
+                            <li>Stress = Force / cross-sectional area = F/A</li>
+                            <li>Strain = elongation / original length = e/Lo</li>
+                            <li><img data-src="img/mwave12.JPG" uk-img/></li>
                             
                             <h4>III.	Modes of Vibration of a Rod Fixed at Midpoint:</h4>
                             <li>•	It will always be a node at midpoint and antinode at the ends.</li>
-                            <li style="text-align: center"><img src="img/HarmonicFreqGenForm.PNG"/></li>
+                            <li>For General Equation:</li>
+                            <ul>
+                                <li> <img data-src="img/mwave13.JPG" uk-img/> </li>
+                            </ul>
                             
                             <h4>IV.	Modes of Vibration of an Air Column:</h4>
                             <li>Pipes can either be open on both ends or on only one end. The open ends act as free-end reflectors (producing antinodes) and the closed ends act as fixed-end reflectors (producing nodes).</li>
-                            <li><b>A.	OPEN PIPE</b></li>
-                            <li style="text-align: center"><img src="img/OpenPipe.PNG"/></li>
+                            <li><i>A.	Open Pipe</i></li>
+                            <li style="text-align: center"><img data-src="img/mwave14.JPG" uk-img/></li>
                             <li>For the general equation:</li>
-                            <li style="text-align: center"><img src="img/GenFormHarmonic.PNG"/></li>
-                            <li>The <b><i>VELOCITY</i></b> of wave traveling thru air is:</li>
-                            <li style="text-align: center"><img src="img/VelocityAir.PNG"/></li>
-                            <li><b>B.	CLOSED PIPE</b></li>
-                            <li style="text-align: center"><img src="img/ClosedPipe.PNG"/></li>
+                            <ul>
+                                <li style="text-align: center"><img data-src="img/mwave15.JPG" uk-img/></li>
+                            </ul>
+                            <li>The <i>VELOCITY</i> of wave traveling thru air is:</li>
+                            <ul style="text-align: center">
+                                <li> <img data-src="img/mwave16.JPG" uk-img/> </li>
+                                <li>Where: T = temperature in °C</li>
+                            </ul>
+
+                            <li><i>B.	Closed Pipe</i></li>
+                            <li style="text-align: center"><img data-src="img/mwave17.JPG" uk-img/></li>
+                            <li>For the General Equation:</li>
+                            <ul>
+                                <li style="text-align: center"><img data-src="img/mwave18.JPG" uk-img/></li>
+                            </ul>
                         </ul>
                     </div>
                 </li>
