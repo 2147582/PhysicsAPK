@@ -84,11 +84,12 @@
     <div class="uk-section">
         <div class="uk-container uk-container-xsmall">
             <h2> Electromagnetism </h2>
-            
             <p>
                 Many applications of electricity are based on the fact that electric current passing thru a conductor produces a magnetic field around the conductor or vice versa, i.e. when a conductor moves thru a magnetic field, an electromotive force (emf) is generated and hence current could flow if there is a complete loop.
                 This is called electromagnetism. The operation of such devices or machines like the  <br> electric motor, generator, the transformer, the inductor coils, etc. are all based on this phenomenon.
             </p>
+
+
             <ul uk-accordion="multiple: true">
 
                 <!-- Electromagnetism: The Magnetic Field -->
@@ -106,26 +107,23 @@
                             </ul>
                             <li>One characteristic of a magnetic field is its direction which is usually indicated by a set of lines drawn in the magnetic field called magnetic field lines (also called magnetic lines of force or lines of induction).</li>
                             <ul class="uk-list">
-                                <table class="uk-table uk-table-divider">
+                                <table class="uk-table">
                                     <tbody>
-                                        <br>
                                         <tr>
-                                            <img src="img/MagFieldLines.PNG" style="height: 150px; padding-left: 4%;"/>
+                                            <td><img src="img/MagFieldLines.PNG" style="height: 150px; padding-left: 4%;"/>
+                                            </td>
+                                            <td><img src="img/Xfield.PNG" style="height: 150px; padding-left: 4%;"/></td>
                                         </tr>
                                         <tr>
-                                            <img src="img/DownFieldLines.PNG" style="height: 150px; padding-left: 4%;"/>
-                                        </tr>
-                                        <tr>
-                                            <img src="img/Xfield.PNG" style="height: 150px; padding-left: 4%;"/>
-                                        </tr>
-                                        <tr>
-                                            <img src="img/DotField.PNG" style="height: 150px; padding-left: 4%;"/>
+                                            <td><img src="img/DownFieldLines.PNG" style="height: 150px; padding-left: 4%;"/></td>
+                                            <td><img src="img/DotField.PNG" style="height: 150px; padding-left: 4%;"/></td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </ul>
                             
                             <li>Note: When the lines are curved, the magnetic field is non-uniform and the direction at any point is taken by the tangent to a line passing through that point.</li>
+                            
                             <li style="text-align: center"><img src="img/CurvedLine.PNG" width="350" height="300"/></li>
                         </ul>
                     </div>
@@ -139,18 +137,31 @@
                     <div class="uk-accordion-content">
                         <ul class="uk-list">
                             <li>A set of magnetic field lines or a group of lines taken or computed as one</li>
-                                <table class="uk-table uk-table-hover uk-table-divider">
-                                    <tbody>
-                                        <tr>
-                                            <img src="img/Flux.PNG"/>
-                                        </tr>
-                                        <tr>
-                                            <img src="img/FluxForm.PNG"/>
-                                            <td><img src="img/Flux.PNG" style="height: 200px; width: 200px;"/></td>
-                                            <td><img src="img/FluxForm.PNG" style="height: 180px; width: 200px;"/></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <br>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><img data-src="img/elec1.jpg" width="400" height="350" uk-img></td>
+                                        <td>
+                                            <li>Units of Magnetic Flux</li>
+                                            <ul>
+                                                <li>For CGS System</li>
+                                                <ul>
+                                                    <li>1 Maxwell = 1 line</li>
+                                                </ul>
+                                                <li>For MKS System</li>
+                                                <ul>
+                                                    <li>1 Weber = 108 lines</li>
+                                                </ul>
+                                                <li>Ex. ∅ = 5 x 10^-4 Weber means</li>
+                                                <ul>
+                                                    <li>(5 x 10^-4)(10^8) or 5 x 10^4 field lines</li>
+                                                </ul>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                             <li>Vector Addition uses special methods which are not arithmetic. The particular method used depends on the orientation of the vectors and how many vectors are being considered.</li>
                         </ul>
                     </div>
@@ -164,31 +175,45 @@
                     <div class="uk-accordion-content">
                         <ul class="uk-list">
                             <li>Magnetic flux passing per unit area of a surface placed at the point perpendicular to the magnetic field.</li>
-                            <table class="uk-table uk-table-hover uk-table-divider">
+                            <table class="uk-table">
                                 <tbody>
                                     <tr>
-                                        <img src="img/FluxPassing.PNG" style="height: 200px; width: 200px;"/>
-                                    </tr>
-                                    <tr>
-                                        <img src="img/FluxPassingForm.PNG" style="height: 150px; width 150px;"/>
-                                        <p>Let <b>∅</b> = the flux that passes through area A</p><br>
-                                        <p><b>βP</b> = the flux density at pt “P”</p>
-                                        <img src="img/FluxPassingForm.PNG" style="height: 200px; width: 200px;"/>
-                                    </tr>
-                                    <tr>
-                                        <img src="img/FluxPassingForm2.PNG" style="height: 200px; width: 400px;"/>
+                                        <td><img data-src="img/elec2.JPG" uk-img/></td>
+                                        <td>
+                                            <li>Let:</li>
+                                            <ul>
+                                                <li>∅ = the flux that passes through area A</li>
+                                                <li>βP = the flux density at pt "P"</li>
+                                            </ul>
+                                            <img data-src="img/elec3.JPG" uk-img/>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <h5>Note:</h5>
+                            <li>if ∅ is in Webers and A in m2</li>
+                            <li>β is in<img data-src="img/elec4.JPG" uk-img/> or Tesla (T)</li>
+                            <li><b>Note:</b></li>
                             <ul>
-                                <li><p>1. If the surface area A is PERPENDICULAR to β then, <b>∅ = βA</b></p></li>
-                                <li><p>2. If the surface area A is NOT PERPENDICULAR to β then, <b>∅ = βAcosθ </b></p></li>
-                                <li>where θ is the angle between the normal to the surface and β</li>
-                            </ul>
+                                <li>1. If the surface area A is PERPENDICULAR to β then, </li>
+                                <ul>
+                                    <li><b>∅ = βA</b></li>
+                                </ul>
+                                    
+                                <li>2. If the surface area A is NOT PERPENDICULAR to β then, </li>
+                                <ul>
+                                    <li><b>∅ = βAcosθ </b></li>
+                                </ul>
+                                <li><i>where θ is the angle between the normal to the surface and β</i></li>
+                            </ul><br>
                             <li>Magnetic flux density is a vector quantity and its direction is the same as the direction of the magnetic field at a point.</li>
-                            <li style="text-align: center"><img src="img/FluxDensity.PNG"/></li>
-                            <li style="text-align: center"><img src="img/FluxDensity.PNG" style=" width: 400px; height: 100px;"/></li>
+                            <table>
+                                <tbdoy>
+                                    <tr>
+                                        <td><img data-src="img/elec5.JPG" uk-img/></td>
+                                        <td>βP (Tangent to a field line passing through the point)</td>
+                                    </tr>
+                                </tbdoy>
+                            </table>
                         </ul>
                     </div>
                 </li>
