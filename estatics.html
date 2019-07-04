@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body class="uk-background-muted">
+        <div class="uk-section-primary uk-preserve-color">
+                <nav class="uk-navbar uk-navbar-sticky">
+                    <div class="uk-navbar-left">
+                            <a class="uk-button uk-button-default uk-margin-small-right" uk-icon="icon: menu" uk-toggle="target: #offcanvas-overlay">
+                            </a>
+                            <!--<img data-src="img/p6.PNG" height="150" width="130" uk-img>-->
+                            <h5 class="uk-nav-header" style="color: white; font-size: 18px">SLU Physics</h5>
+                    </div>
+                    
+        
+                </nav>
+            </div>
+
+    <div id="offcanvas-overlay" uk-offcanvas="mode: slide; overlay: true">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-animation">
+                <div class="uk-panel">
+                        <ul class="uk-nav uk-nav-default">
+                            <h3><a class="uk-link-reset" href="index.html">Home</a></h3>
+                            <!-- First Heading -->
+                            <li class="uk-nav-header">Lessons</li>
+                            <li class="uk-nav-divider"></li>
+                            <li class="uk-parent">
+                                    <a class="uk-disabled">Physics 1</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="intro.html">Introduction</a></li>
+                                        <li><a href="vsquantities.html">Vector and Scalar Quantities</a></li>
+                                        <li><a href="uvectors.html">Unit Vectors</a></li>
+                                        <li><a href="uarm.html">Uniform Accelerated Rectilinear Motion</a></li>
+                                        <li><a href="pmotion.html">Projectile Motion</a></li>
+                                        <li><a href="nlm.html">Newton's Law of Motion</a></li>
+                                        <li><a href="work.html">Work</a></li>
+                                        <li><a href="lmomenandcol.html">Linear Momentum and Collision</a></li>
+                                        <li><a href="torque.html">Torque</a></li>
+                                        <li><a href="hquantities.html">Heat Quantities</a></li>
+                                    </ul>
+                                </li>
+                        </ul>
+                        <ul class="uk-nav uk-nav-default">
+                            <li class="uk-parent">
+                                <a class="uk-disabled">Physics 2</a>
+                                <ul class="uk-nav-sub">
+                                    <li><a href="shm.html">Simple Harmonic Motion</a></li>
+                                    <li><a href="mwaves.html">Mechanical Waves</a></li>
+                                    <li><a href="acoustics.html">Acoustics</a></li>
+                                    <li class="uk-active"><a href="estatics.html">Electrostatics</a></li>
+                                    <li><a href="guasse.html">Gauss' Law</a></li>
+                                    <li><a href="capacitors.html">Capacitors</a></li>
+                                    <li><a href="creforce.html">Current, Resistance and Electromotive Force</a></li>
+                                    <li><a href="dccircuits.html">Direct Current Circuits</a></li>
+                                    <li><a href="electromag.html">Electromagnetism</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+        
+                        <ul class="uk-nav uk-nav-default" uk-nav="multiple: true;">
+                            <!-- Third Heading -->
+                            <li class="uk-nav-header"></li>
+                            <li class="uk-nav-header">About</li>
+                            <li class="uk-nav-divider"></li>
+                            <li>
+                                <a href="about.html">This App</a>
+                            </li>
+                        </ul>
+        
+                    </div>
+        </div>
+    </div> <!-- End of Canvas-->
+
+
+    <div class="uk-section">
+        <div class="uk-container uk-container-xsmall">
+            <h2> Electrostatics </h2>
+            <ul uk-accordion="multiple: true">
+
+                <!-- Electric Force -->
+                <li class="uk-open">
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Electric Force</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <h4>Electrostatics</h4>
+                            <ul>
+                                <li>Branch of physics that deals with the study of charges at rest.</li>
+                            </ul>
+                            <h4>Electric Charges</h4>
+                            <ul>
+                                <li>One of the basic properties of the elementary particles of matter giving rise to all electric and magnetic forces and interactions.</li>
+                                <li>There are two types of electric charges: positive and negative</li>
+                            </ul>
+                            <li>Atomic Structure:</li>
+                            <li style="text-align: center"> <img src="img/estat1.JPG"></li>
+                            <table class="uk-table uk-table-divider">
+                                <thead>
+                                    <tr>
+                                        <th>Particle</th>
+                                        <th>Charge</th>
+                                        <th>Mass (Kg)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Electron (e)</td>
+                                        <td>-1.6 x 10-19 C or -4.8 x 10^-10 esu (or statC)</td>
+                                        <td>9.1094 x 10^-31</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Proton (p)</td>
+                                        <td>+1.6 x 10-19 C or +4.8 x 10^-10 esu (or statC)</td>
+                                        <td>1.6726 x 10^-27</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Neutron (n)</td>
+                                        <td>0</td>
+                                        <td>1.6749 x 10^-27</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td></td>
+                                        <td>* 1C = 3 x 109 statC</td>
+                                        <td></td>
+                                    </tr>
+                                </tfoot>
+                            </table><br>
+
+                            <li><i>Electron Theory:</i></li>
+                            <ol>
+                                <li>A neutral body is one that has exactly as many electrons as there are protons.</li>
+                                <li>When a neutral body gains electrons from an outside source, it acquires a negative charge. Hence, a negatively charged body has more electrons than protons.</li>
+                                <li> When neutral body loses some of its own electrons, it acquires a positive charge. Hence, a positively charged body has fewer electrons than protons</li>
+                            </ol>
+
+                            <li><i>Electrification (Charging of Body):</i></li>
+                            <ul>
+                                <li>The process of gaining or losing electron (transfer of electrons from one material to the other).</li>    
+                            </ul>
+                            
+                            <li><i>Two Methods of Electrification:</i></li>
+                            <ul>
+                                <li>Conduction</li>    
+                                <ul>
+                                    <li>Charging a neutral body by bringing into contact with a charged body.</li>
+                                </ul>
+                                <li>Induction</li>    
+                                <ul>
+                                    <li>The charging body is brought near the neutral body, thus inducing it to have an opposite charge as that of the charging body.</li>
+                                </ul>
+                            </ul><br>    
+
+                            <li><i>Laws of Electrostatics:</i></li>
+                            <ul class="uk-list">
+                                <li>1.	Like charges repel, unlike charges attract each other.</li>
+                                <li>2.	Law of Conservation of Charge.</li>    
+                                <ul>
+                                    <li>The algebraic sum of the electric charge in any closed system remains constant.</li>
+                                </ul>
+                                <li>3.	Coulomb’s Law of Electrostatics (Charles Augustin de Coulomb).</li>    
+                                <ul>
+                                    <li>The force F between two electric charges is directly proportional to the product of the charges and inversely proportional to the square of the distance between them.</li>
+                                </ul>
+                            </ul><br> 
+                            
+                            
+                            <ul class="uk-list">
+                                <li style="text-align: center"><b>Coulomb's Law</b></li>
+                                <li style="text-align: center"><img src="img/estat2.JPG"></li>
+                                <li>Where:</li>
+                                <ul>
+                                    <li>F = force between the charges; N or dynes</li>
+                                    <li>q1 & q2 = magnitude of the charges; C or esu (or statC)</li>
+                                    <li>r = distance between them; m or cm</li>
+                                    <li>k = constant of proportionality (depending on)</li>
+                                </ul>
+                                <li><img src="img/estat3.JPG"></li>
+                                <li>Where:</li>
+                                <ul>
+                                    <li>ε = permittivity of the medium</li>
+                                </ul>
+                                <li>For Air:</li>
+                                <ul>
+                                    <li>ε = 8.85 x 10-12 C2/N-m^2</li>
+                                    <li>k = 9 x 109 N-m2/C^2</li>
+                                    <li>= 1 dyne-cm2/esu2 </li>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- Electric Field -->
+                <li>
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Electric Field</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li>Portions of space surrounding the charged body or several charged bodies</li>
+                            <li><i>Line of force</i></li>
+                            <ul>
+                                <li>An imaginary line representing a field of force, such as an electric field, such that the tangent at any point is the direction of the field vector at that point</li>
+                            </ul>
+                            <li><i>Direction of an Electric Field lines:</i></li>
+                            <ul>
+                                <li>Electric field lines are directed away from positive charges and toward negative charges</li>
+                            </ul>
+                            <li><img src="img/estat5.JPG"></li>
+                            <li><i>* E is a vector quantity. Its direction is the same as the direction of the force that acts on a + charge placed at that point.</i></li>
+                        </ul>
+                        <ul class="uk-list">
+                            <li>The <b>Electric Field, E</b> at some point in space is defined as the electric force F that acts on a small positive test charge, q0, placed at that point divided by the magnitude of the test charge</li>
+                            <ul style="text-align: center">
+                                <li> <img src="img/estat6.JPG"></li>
+
+                            </ul>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- Electric Potential -->
+                <li>
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Electric Potential</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <h4>Electric Potential Energy (U)</h4>
+                            <li>Electric potential energy is a potential energy (measured in joules) that results from conservative Coulomb forces and is associated with the configuration of a particular set of point charges within a defined system</li>
+                            <li>The potential energy associated with two point charges q1 and q2 separated by a distance r12 is:</li>
+                            <ul>
+                                <li><img src="img/estat7.JPG"></li>
+                            </ul>
+                            <li><i>Energy is a scalar</i>, not a vector. To find the total electric potential energy associated with a set of charges, simply add up the energy (which may be positive or negative) associated with each pair of charges.</li>
+                            <ul style="text-align: center">
+                                <li><img src="img/estat8.JPG"></li>
+                                <li><img src="img/estat9.JPG"></li>
+                            </ul>
+                            <li><i>Work-Energy Principle</i></li>
+                            <ul>
+                                <li>The change in electric potential energy, ΔU = UB – UA when a point charge ‘q’ moves from some point ‘A’ to another point ‘B’, is the negative of the work done by the internal force (conservative force, i.e., electric force and field ) or the positive of the work done by an external or applied force (non-conservative force), as the charge moves from ‘A’ to ‘B’.</li>
+                                <li style="text-align: center"><img src="img/estat10.JPG"></li>
+                            </ul>
+
+                            <h4>Electric Potential (V)</h4>
+                            <li>Potential energy U per unit charge associated with a test charge q placed at that point</li>
+                            <li style="text-align: center"><img src="img/estat11.JPG"></li>
+                            <li>Where:</li>
+                            <ul>
+                                <li>Vp = electric potential at the point ‘P’</li>
+                                <li> r = distance between the point charge Q and a test charge q located at a certain point ‘P’</li>
+                                <li>k = proportionality constant </li>
+                                <li><u>Note:</u> Vp is (+) if Q (+); Vp is (-) if Q (-) </li>
+                                <li> </li>
+                            </ul>
+
+                            <li><i>Potential Due to a Collection of Point Charges (Q1, Q2, Q3, …):</i></li>
+                            <li>The electric potential due to a collection of point charges is the scalar (algebraic) sum of the potentials due to each charge.</li>
+                            <li style="text-align: center"><img src="img/estat12.JPG"></li>
+
+                            <li><i>Potential Difference, ΔV</i></li>
+                            <li>The potential difference ΔV = VB - VA between two points A and B in an electric field is defined as the change in electric potential energy of the system when a charge q is moved between the points divided by the charge:</li>
+                            <ul style="text-align: center">
+                                <li><img src="img/estat13.JPG"></li>
+                            </ul>
+                            
+                            <li>• For <u>conservative/internal</u> force (i.e. electric force and field): </li>
+                            <ul>
+                                <li><img src="img/estat14.JPG"></li>
+                            </ul>
+                            <li>• For <u>non-conservative</u> force (i.e external/applied force): </li>
+                            <ul>
+                                <li><img src="img/estat15.JPG"></li>
+                            </ul>
+                        </ul>
+                    
+                    </div>
+                </li>    
+
+                <!-- Sample Problems -->
+                <li>
+                    <a class="uk-accordion-title" href="#">
+                        <h4 class="uk-heading-line"><span>Sample Problems</span></h4>
+                    </a>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                           
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
